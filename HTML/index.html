@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pavi Path</title>
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="../CSS/General.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Skillbar.css">
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../Javascript/indexSizing.js"></script>
+	<script src="../Javascript/Skillbar.js"></script>
+	<script src="../Javascript/downloads.js"></script>
+</head>
+
+<body onload="fixDivs()">
+
+	<div class="topHeader">
+		<div id="headerLeft" class="Left alignTo">
+			<img class="imageDB headerImage" src="../Img/Profile.jpg">
+			<br>
+		</div>
+
+		<div id="headerRight" class="Right aligned">
+			<div id="content" class="gradBlackTrans" style="padding-left: 10px; display: inline-block">
+				<h2>My Name Is</h2>
+				<h1>Pavithran Pathmarajah</h1>
+				<h2>Aspiring Software Engineer</h2>
+				<hr>
+				<b>pathmap@mcmaster.ca</b>
+				<br>
+				<b>(905) 599 7284</b>
+				<br>
+				<b>19431 Dufferin St. Newmarket ON L3Y4V9</b>
+			</div>
+		</div>
+	</div>
+
+	<div class="spacer"></div>
+
+
+	<div class="fullWidth">
+		<div class="col13 notFocus" onclick="goToProjects()">
+			<h1>PROJECTS</h1>
+		</div>
+		<div class="col13 focus">
+			<h1>ABOUT ME</h1>
+		</div> 
+		<div class="col13 notFocus" onclick="goToGit()">
+			<h1>GITHUB</h1>
+		</div>
+	</div>
+
+	<div class="spacer"></div>
+
+	<div class="fullWidth">
+		<div class="pageWidth">
+			<div class="Left">
+				<div>
+					<h2 style="padding-bottom: 0px; margin-bottom: 0px; float: left">Education</h2>
+					<hr style="clear: both">
+					<br>
+
+					<div id="McMaster">
+						<div class="divWrapper">
+
+							<img class="alignTo" style="width: 25%; float: left;" src="../Img/McMaster.png">
+							<div class="aligned" style="padding-left: 5%;width:70%; float: right">
+								<span style="float: left;"> <b>Bachelor of Software Engineering</b></span>
+								<span style="float: right;"> <b>Class of 2019</b></span>
+								<br>
+								<hr>
+								<span >McMaster University, Hamilton ON.</span>
+							</div>
+						</div>
+						<div class="divWrapper">
+							<ul >
+								<li>
+									Learning the software development life cycle
+								</li>
+								<br>
+								<li>
+									Currently enrolled in a degree completion program which focuses on the design and maintenance of software
+								</li>
+								<br>
+								<li>
+									Learning advanced algorithm design
+								</li>
+							</ul>
+
+							<span >Relevant Prokjects</span>
+							<hr>
+							<ul >
+								<li>
+									Worked effectively with colleagues in order to design and implement a basic computer based shopping interface. This required the task to split into modules which were delegated to individuals, requiring good communication in order to allow the modules to work in unison when put together.
+								</li>
+								<br>
+								<li>
+									Worked effectively in a team of 3 in order to design, model and prototype a gear train designed to step down a high speed motor in order to drive a Disc-Reader. This allowed for strong problem solving skills as well as communication skill in order to get the gear train to fit the precise specifications.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="spacer"></div>
+
+					<div id="Newmarket">
+						<div class="divWrapper">
+							<img class="alignTo" style="width: 25%" src="../Img/Newmarket.png">
+							<div class="aligned" style="padding-left: 5%;width:70%; float: right">
+								<span style="float: left;"> <b>High School Diploma, Buisness</b></span>
+								<span style="float: right;"> <b>Class of 2014</b></span>
+								<br>
+								<hr>
+								<span>Newmarket High School, Newmarket ON.</span>
+							</div>
+						</div>
+						<div class="divWrapper">
+							<ul >
+								<li>
+									Graduated with Specalist High School Major in Business, which is given to students who push their main focus toward business learning throughout highschool
+								</li>
+								<br>
+								<li>
+									Took all programming courses offered
+								</li>
+							</ul>
+
+							<span>Relevant Prokjects</span>
+							<hr>
+							<ul>
+								<li>
+									Designed a program, in a team of 4 that required graphics, internal frameworks and multiple threads. Which required delegating in this project I had taken a leadership role. (Full Details in Portfolio)
+								</li>
+								<br>
+								<li>
+									Designed a simple airplane flight booking system; the system allowed users to choose from a selection of planes or design there own. A Full GUI was included the program kept track of flight locations, users and the admin could remove planes from the system.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="spacer"></div>
+
+				<div>
+					<h2 style="padding-bottom: 0px; margin-bottom: 0px; float: left">Work Experience</h2>
+					<hr style="clear: both">
+					<br>
+
+					<div id="LensCrafters">
+						<div class="divWrapper">
+							<img class="alignTo" style="width: 25%" src="../Img/lenscrafters-logo.png">
+							<div class="aligned" style="padding-left: 5%;width:70%; float: right">
+								<span style="float: left;"> <b>Sales Associate</b></span>
+								<span style="float: right;"> <b>June 2014 - August 2014</b></span>
+								<br>
+								<hr>
+								<span>Lens Crafters, Newmarket ON.</span>
+							</div>
+							<div>
+								<ul >
+									<li>
+										Created algorithm to prioritize customers in order to maximize profits within the 'sale period'
+									</li>
+									<br>
+									<li>
+										Interacted with a high volume of customers daily demonstrating strong communication skills
+									</li>
+									<br>
+									<li>
+										Taught co-workers how to integrate given tablets into their sales pitch
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="spacer"></div>
+
+					<div id="Husky">
+						<div class="divWrapper">
+							<img class="alignTo" style="width: 25%" src="../Img/husky_logo.png">
+							<div class="aligned" style="padding-left: 5%;width:70%; float: right">
+								<span style="float: left;"> <b>Gas Station Attendant </b></span>
+								<span style="float: right;"> <b>September 2012 - June 2014</b></span>
+								<br>
+								<hr>
+								<span>Husky Gas Station, Newmarket ON.</span>
+
+							</div>
+							<div>
+								<ul >
+									<li>
+										Tracked incoming and outgoing vehicles to ensure owners would not drive off without paying
+									</li>
+									<br>
+									<li>
+										Upsold promotions to customers as well as the loyalty program, registering up to 50 new members a shift
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="spacer"></div>
+
+					<div id="MontanaGroup">
+						<div class="divWrapper">
+							<img class="alignTo" style="width: 25%" src="../Img/MontanaGroup.png">
+							<div class="aligned" style="padding-left: 5%;width:70%; float: right">
+								<span style="float: left;"> <b>Junior Bookkeeper</b></span>
+								<span style="float: right;"> <b>March 2013 - August 2013</b></span>
+								<br>
+								<hr>
+								<span>The Montana Group, Newmarket ON.</span>
+							</div>
+							<div>
+								<ul >
+									<li>
+										Designed and implemented a new organizational software to increase efficiency
+									</li>
+									<br>
+									<li>
+										Reorganized system for documenting billable hours
+									</li>
+									<br>
+									<li>
+										Analyzed income statements and assisted with trend prediction
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="Right">
+				<div >
+					<h2 style="padding-bottom: 0px; margin-bottom: 0px; float: right">Skills</h2>
+					<hr style="clear: both">
+					<br>
+					<div class="divWrapper">
+						
+					</div>
+					<div class="skillbar clearfix " data-percent="75%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>JAVA</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					<div class="skill-bar-percent">%</div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>JAVASCRIPT</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					<div class="skill-bar-percent">%</div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>BASH</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					<div class="skill-bar-percent">%</div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="50%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>C++</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					<div class="skill-bar-percent">%</div>
+					</div>
+
+			
+					<div class="spacer"></div>
+					
+
+					<div class="skillbar clearfix " data-percent="75%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>GIT&nbspVERSION&nbspCONTROL</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					<div class="skill-bar-percent">%</div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="50%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>LATEX</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					<div class="skill-bar-percent">%</div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="90%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>ARDUINO</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					<div class="skill-bar-percent">%</div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="70%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>OFFICE&nbspSUITE</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					<div class="skill-bar-percent">%</div>
+					</div>
+
+					
+				</div>
+
+				<div class="spacer"></div>
+				
+				<div >
+					<h2 style="padding-bottom: 0px; margin-bottom: 0px; float: right">Competitions</h2>
+					<hr style="clear: both">
+					<br>
+
+					<div id="Communitech">
+						<div class="divWrapper">
+
+							<img class="alignTo" style="width: 25%; float: left;" src="../Img/acm_icpc.png">
+							<div class="aligned" style="padding-left: 5%;width:70%; float: right">
+								<span style="float: left;"> <b>ACM - International Collegiate Programming Contest</b></span>
+								<span style="float: right;"> <b>October 2016</b></span>
+								<br>
+								<hr>
+								<span >University of Windsor, Windsor ON.</span>
+							</div>
+						</div>
+						<div class="divWrapper">
+							<br>
+							<ul >
+								<li>
+									Regionals Competition, after our team placed third at McMaster University we were invited to the regionals competition
+								</li>
+								<br>
+								<li>
+									Algorithm Design and implementation contest, 10 complex algorithm based word problems were given, the goal was to create an algorithm to solve the problem and get the correct output solving as many as possible in a 5 hour span.
+								</li>
+								<br>
+								<li>
+									Placed 68th in the region out of 130 teams.
+								</li>
+							</ul>
+
+							<span >Experience</span>
+							<hr>
+							<ul >
+								<li>
+									The competition taught me, that even tho psedocode may be good for a general implementation, but it is good to also account for small language specfic qwerks. Such as dealing with overflow in Python3 vs Java.
+								</li>
+								<br>
+								<li>
+									This experience showed me that a programmer can overlook a minor bug, and the importance of having a once over done before a release. Having recoded and submitted 2 of the incorrect submissions, made by the team due to a simple aliasing issue.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="spacer"></div>
+
+					<div id="Communitech">
+						<div class="divWrapper">
+
+							<img class="alignTo" style="width: 25%; float: left;" src="../Img/communitech_logo.png">
+							<div class="aligned" style="padding-left: 5%;width:70%; float: right">
+								<span style="float: left;"> <b>Communitech - Code To win</b></span>
+								<span style="float: right;"> <b>November 2015</b></span>
+								<br>
+								<hr>
+								<span >Communitech Hub, Kitchener ON.</span>
+							</div>
+						</div>
+						<div class="divWrapper">
+							<br>
+							<ul >
+								<li>
+									Finalist, after placing in the top 50 nation wide.
+								</li>
+								<br>
+								<li>
+									Algorithm Design and implementation contest, 5 complex algorithm based word problems were given, the goal was to create an algorithm to solve the problem and get the correct output.
+								</li>
+								<br>
+								<li>
+									McMaster University placed 3rd in the region
+								</li>
+							</ul>
+
+							<span >Experience</span>
+							<hr>
+							<ul >
+								<li>
+									The code to win contest humbled me and taught me that I have a long way to go, that not every problem can be solved in my head.
+								</li>
+								<br>
+								<li>
+									This experience taught me of the importance of time management. That when you are on a deadline sometimes it is better to use algorithms that are tried and true instead of creating from scratch.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="spacer"></div>
+
+				<div >
+					<h2 style="padding-bottom: 0px; margin-bottom: 0px; float: right">Downloads</h2>
+					<hr style="clear: both">
+					<br>
+
+					<div class="btn" onclick="downloadResOnePG()">
+					<div class="btn-title" style="width: 100%; background: #00a8ff;"><span>RESUME ONE PAGE</span></div>
+					</div>
+
+					<div class="btn" onclick="downloadResTwoPG()">
+					<div class="btn-title" style="width: 100%; background: #00a8ff;"><span>ICPC Certificates</span></div>
+					</div>
+
+					<div class="btn" onclick="downloadCV()">
+					<div class="btn-title" style="width: 100%; background: #00a8ff;"><span>CURRICULUM VITAE</span></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="spacer"></div>
+</div>
+</body>
+</html>

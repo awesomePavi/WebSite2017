@@ -1,0 +1,179 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+html{
+ 	--main-bg-color: grey;
+ 	font-family: 'Open Sans', 'sans-serif';
+ }
+
+body{
+	background-color: var(--main-bg-color);
+	
+	background: url("../Img/BG.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+td a {
+	text-decoration: none
+}
+
+.display{
+
+}
+
+.display a{
+	color: black;
+}
+
+.display a:hover{
+	color: green;
+}
+
+
+.notFocus{
+	color: #939393;
+}
+
+.notFocus:hover{
+	color: #6B6B6B;
+}
+
+.focus{
+	color: #000000;
+}
+
+.fullWidth:before, .topHeader:before{
+	
+	 filter        : blur(50px);
+    -moz-filter   : blur(50px);
+    -webkit-filter: blur(50px);
+    -o-filter     : blur(50px);
+
+     z-index: -1;
+     clear: initial;
+}
+
+.topHeader{
+	width: 100%;
+}
+
+
+.fullWidth{
+	width: 100%;
+	float: left;
+}
+
+/* third sized column */
+.col13{
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+
+.divWrapper {
+	clear: both;
+}
+
+.Left{
+	float: left;
+	width: 50%;
+}
+
+.Right{ 
+	float: right;
+	width: 50%;
+}
+
+.projects .Left{
+	width: 70%;
+} 
+.projects .Right{
+	width: 26%;
+}
+
+
+.pageWidth .Left, .pageWidth .Right{
+	width: 48%;
+}
+
+
+.Col1Left{
+	float: left;
+	width: 50%;
+	/*background-color: red;*/
+}
+
+.Col1Right{
+	float: right;
+	width: 50%;
+	/*background-color: blue;*/
+}
+
+.headerImage{
+	width: 80%;
+}
+
+.gradBlackTrans {
+	color: black;
+ /* background: rgba(0,0,0,0.1); /* For browsers that do not support gradients */
+ /* background: -webkit-linear-gradient(left, rgba(0,0,0,3), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+ /* background: -o-linear-gradient(right, rgba(0,0,0,3), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+ /* background: -moz-linear-gradient(right, rgba(0,0,0,3), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+ /* background: linear-gradient(to right, rgba(0,0,0,3), rgba(0,0,0,0)); /* Standard syntax */
+}
+
+.projects{
+	max-width: 80%;
+	margin: auto;
+}
+
+.pageWidth {
+	/*max-width: 1000px;*/
+	max-width: 80%;
+	margin: auto;
+}
+
+.verticalCenter{
+	 position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.centerHoriz{
+	margin: 0 auto;
+}
+
+
+/* Double Image Border*/
+.imageDB{
+   padding:2px;
+   border:2px solid #021a40;
+   background-color: var(--main-bg-color);
+}
+
+.spacer{
+	clear: both;
+	padding: 15px;
+}
+
+/* Image border*/
+.imageB{
+	margin:2px;
+   border:2px solid #021a40;
+}
+@media only screen and (min-width: 501px) {
+	.headerImage{
+		max-width: 300px;
+		float: right;
+	}
+}
+@media only screen and (max-width: 500px) {
+ 	.Left, .Right, .col13, .headerImage, .pageWidth .Left, .pageWidth .Right {
+ 		width: 100%;
+ 		/*background-color: green;*/
+ 	}
+}
