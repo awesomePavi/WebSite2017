@@ -62,6 +62,73 @@
 				<hr style="clear: both">
 				<br>
 
+				<img style="width: 25%; float: left;" src="./Img/StoA.png">
+				<div style="padding-left: 5%;width:70%; float: right">
+					<span style="float: left;"> <b>Spotify To Apple Music Converter</b></span>
+					<span style="float: right;"> <b>Created December 2016</b></span>
+					<br>
+					<hr>
+					<span>No suitable products on market</span>
+					<br>
+					<br>
+					The purpose of this website was simply founded, I have been a long time Spotify user and have recently changed services to Apple Music. I searched the web in attempt
+					to find a program or service which would allow me to transfer my Specify playlist over to Apple Music. I was unable to find any services that worked which did not
+					require IOS, or were free, or used security vulnerabilities which were patched as of ITunes version 12.5.4. To this end I decided it would be in my best interest to
+					create my own system.
+					<br>
+					<br>
+					The idea I ahd was simple, to re-create the ITunes playlist structure I did this by making a simple apple music playlist and exporting it from ITunes. I reverse
+					engineered the playlist style and discovered what information I would need to successfully mimic a playlist. I went about building this playlist builder in 4 steps:
+					<ul>
+						<li> Use the Spotify API to gain access to Spotify playlist and track info</li>
+						<li> Build a user interface to select a playlist to convert</li>
+						<li> Create a downloadable text file to import into ITunes, through HTML and JavaScript</li>
+						<li> Use the ITunes search API, and search songs with the track name and artist provided by Spotify. Assuming the first result returned was correct</li>
+					</ul>
+					The biggest issue I ran into occurred at the 4th step, for Apple Music requires composer information in the playlist file in-order to successfully include the
+					track. This is a piece of Data that I was unable toget from the ITunes API. I then explored different options trying to play with AppleScripts and Apple Music
+					API to make a desktop based system but the API for Apple Music in its current capacity is for IOS.
+					<br>
+					<Br>
+					Due to these setbacks the website currently creates Spotify widgets with its Apple Music counterpart, allowing users to find their tracks in Apple Music but until furthuer
+					notice the automated transfer of a playlist is unlikely to occur.
+					<br>
+					<br>
+					This was a simple web-based implementation made using, HTML, JavaScript with the Spotify API, ITunes API and the Apple Music Toolbox.
+				</div>
+
+			</div>
+			<div class="Right display ">
+				<hr style="clear: both">
+				<table style="margin: 0px auto; padding: 0; width: 100%">
+					<tr>
+						<td>
+							<a href="http://stoa.pavipath.com" target="_blank">
+								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
+							</a>
+						</td>
+						<td><img class="scaled" src="./Icons/web.png"></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://github.com/awesomePavi/SpotifyToApple" target="_blank">
+								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+							</a>
+						</td>
+						<td><img class="scaled" src="./Icons/git.png"></td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+
+		<div class="spacer"></div>
+
+		<div class="projects">
+			<div class="Left ">
+				<hr style="clear: both">
+				<br>
+
 				<img style="width: 25%; float: left;" src="./Img/YHack.png">
 				<div style="padding-left: 5%;width:70%; float: right">
 					<span style="float: left;"> <b>Distributed Computing</b></span>
@@ -74,7 +141,7 @@
 					The idea behind the program was a test run for a scalable system, building off the idea of how much computing power is wasted by computers idling. As a proof of
 					concept a simple data set of metorite finding across the globe over 100 years was used, where the system would use distributed computing to calculate the likelyhood of
 					another meteorite hitting a particular location. The system
-					that was built used servers provided by <a href="https://www.1and1.com">1&1</a>, to handle, distribute and merge data. The system would break the
+					that was built used servers provided by <a target="_blank" href="https://www.1and1.com">1&1</a>, to handle, distribute and merge data. The system would break the
 					data up into sectors's based on longitude and latitude server side; then when a connection is made it sends a random sector to the connected computer to be
 					analyzed (the sector is chosen at random to try and compensate for concurrency issues that may arise from sequential sector analysis). The user's computer would
 					receive the data and would process the data with code embeded into the page, once the analysis is completed it is sent back to the server, which flags the sector
@@ -97,7 +164,7 @@
 				<table style="margin: 0px auto; padding: 0; width: 100%">
 				<tr>
 				<td>
-					<a href="https://github.com/awesomePavi/Yhack2016"> 
+					<a href="https://github.com/awesomePavi/Yhack2016" target="_blank">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 					</a>
 				</td>
@@ -172,7 +239,7 @@
 			
 				<tr>
 				<td>
-					<a href="https://github.com/awesomePavi/MECProgramming_2016"> 
+					<a target="_blank" href="https://github.com/awesomePavi/MECProgramming_2016">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 					</a>
 				</td>
@@ -186,7 +253,7 @@
 
 					<tr>
 						<td>
-							<a href="https://ca.linkedin.com/in/simon-ly-b09a73b6">
+							<a target="_blank" href="https://ca.linkedin.com/in/simon-ly-b09a73b6">
 								<h3 class="scaleTo" style="padding: 0; margin: 0;">Simon Ly</h3>
 							</a>
 						</td>
@@ -195,7 +262,7 @@
 
 					<tr>
 						<td>
-							<a href="https://www.linkedin.com/in/tarunjain4">
+							<a target="_blank" href="https://www.linkedin.com/in/tarunjain4">
 								<h3 class="scaleTo" style="padding: 0; margin: 0;">Tarun Jain</h3>
 							</a>
 						</td>
@@ -204,7 +271,7 @@
 
 					<tr>
 						<td>
-							<a href="https://ca.linkedin.com/in/eric-kamada-5b02a3127">
+							<a target="_blank" href="https://ca.linkedin.com/in/eric-kamada-5b02a3127">
 								<h3 class="scaleTo" style="padding: 0; margin: 0;">Eric Kamada</h3>
 							</a>
 						</td>
@@ -215,6 +282,71 @@
 
 				</table>
 				</div>
+		</div>
+
+		<div class="spacer"></div>
+
+		<div class="projects">
+			<div class="Left ">
+				<hr style="clear: both">
+				<br>
+
+				<img style="width: 25%; float: left;" src="./Img/JSTanks.png">
+				<div style="padding-left: 5%;width:70%; float: right">
+					<span style="float: left;"> <b>JS Tanks</b></span>
+					<span style="float: right;"> <b>Created September 2016</b></span>
+					<br>
+					<hr>
+					<span>Term Project</span>
+					<br>
+					<br>
+					The goal for the semester was to advance our documentation, requirements and testing skills to do this the task was to find an existing project and improve it's documentation.
+					A decision was made to try and port a game over from Java to the web such that it would not ahve to be downloaded and ran locally, to try and show that with the power of modern computers
+					simple games can be developed for the browser, allowing for ease of access to anyone. Over the course of a semester the requirements and interface spec was created.
+					<br>
+					<br>
+					The implementation occurred in four main phases:
+					<ul>
+						<li> A simple framework was built to allow the HTML and JavaScript to interact with basic movement included and some simple graphics.
+							(<a href="https://jstank.pavipath.com/HTML/Proof-Of-Concept.html" target="_blank">Here</a>)</li>
+						<li>
+							Core game features were added including tile entities, maps, AI and Difficulty  (<a href="https://jstank.pavipath.com/HTML/JSTanks.html" target="_blank">Here</a>)
+						</li>
+						<li>
+							Homepage, Instructions and bug fixes were added, to a finalized revision  (<a href="https://jstank.pavipath.com/HomePage/homePage.html" target="_blank">Here</a>)
+						</li>
+						<li>
+							An automated testing script was made to test the games features, to save time over conventional manual testing (<a href="https://jstank.pavipath.com/Testing/Test.html" target="_blank">Here</a>)
+						</li>
+					</ul>
+					<br>
+					<br>
+					This was a Model View Controller implementation and was the port of a simple Java game enhanced and rebuilt in HTML5, JavaScript and CSS.
+				</div>
+
+			</div>
+			<div class="Right display ">
+				<hr style="clear: both">
+				<table style="margin: 0px auto; padding: 0; width: 100%">
+					<tr>
+						<td>
+							<a href="http://jstank.pavipath.com" target="_blank">
+								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
+							</a>
+						</td>
+						<td><img class="scaled" src="./Icons/web.png"></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://github.com/awesomePavi/JSTanks-3XA3" target="_blank">
+								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+							</a>
+						</td>
+						<td><img class="scaled" src="./Icons/git.png"></td>
+					</tr>
+
+				</table>
+			</div>
 		</div>
 
 
@@ -253,7 +385,7 @@
 			
 				<tr>
 				<td>
-					<a href="https://github.com/awesomePavi/CPP-Expression-Calculator"> 
+					<a target="_blank" href="https://github.com/awesomePavi/CPP-Expression-Calculator">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 					</a>
 				</td>
@@ -304,7 +436,7 @@
 			
 				<tr>
 				<td>
-					<a href="https://github.com/awesomePavi/Six-Men-Morris_2AA4"> 
+					<a target="_blank" href="https://github.com/awesomePavi/Six-Men-Morris_2AA4">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 					</a>
 				</td>
@@ -318,7 +450,7 @@
 
 					<tr>
 						<td>
-							<a href="https://ca.linkedin.com/in/shawnziyiking">
+							<a target="_blank" href="https://ca.linkedin.com/in/shawnziyiking">
 								<h3 class="scaleTo" style="padding: 0; margin: 0;">Shawn Jin</h3>
 							</a>
 						</td>
@@ -327,7 +459,7 @@
 
 					<tr>
 						<td>
-							<a href="https://github.com/danceFLY">
+							<a target="_blank" href="https://github.com/danceFLY">
 								<h3 class="scaleTo" style="padding: 0; margin: 0;">Emily Ashworth</h3>
 							</a>
 						</td>
@@ -365,7 +497,7 @@
 
 					<tr>
 						<td>
-							<a href="https://github.com/awesomePavi/Weather-Stn-Anly_2XB3">
+							<a target="_blank" href="https://github.com/awesomePavi/Weather-Stn-Anly_2XB3">
 								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 							</a>
 						</td>
@@ -374,7 +506,7 @@
 
 					<tr>
 						<td>
-							<a href="https://drive.google.com/file/d/0Bw2B-7OLfsDAY1ZyeThrNmpmZFk/view">
+							<a target="_blank" href="https://drive.google.com/file/d/0Bw2B-7OLfsDAY1ZyeThrNmpmZFk/view">
 								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on Drive</h3>
 							</a>
 						</td>
@@ -389,7 +521,7 @@
 
 						<tr>
 							<td>
-								<a href="http://kunalshah.ca">
+								<a target="_blank" href="http://kunalshah.ca">
 									<h3 class="scaleTo" style="padding: 0; margin: 0;">Kunal Shah</h3>
 								</a>
 							</td>
@@ -398,7 +530,7 @@
 
 						<tr>
 							<td>
-								<a href="https://ca.linkedin.com/in/pjmcoliveira">
+								<a target="_blank" href="https://ca.linkedin.com/in/pjmcoliveira">
 									<h3 class="scaleTo" style="padding: 0; margin: 0;">Pedro Oliveria</h3>
 								</a>
 							</td>
@@ -407,7 +539,7 @@
 
 						<tr>
 							<td>
-								<a href="https://ca.linkedin.com/in/pareek-ravi-272134113">
+								<a target="_blank" href="https://ca.linkedin.com/in/pareek-ravi-272134113">
 									<h3 class="scaleTo" style="padding: 0; margin: 0;">Pareek Ravi</h3>
 								</a>
 							</td>
@@ -431,7 +563,7 @@
 
 				<img style="width: 25%; float: left;" src="./Img/Website.png">
 				<div style="padding-left: 5%;width:70%; float: right">
-					<span style="float: left;"> <b>Personal WebSite</b></span>
+					<span style="float: left;"> <b>Personal WebSite 2016</b></span>
 					<span style="float: right;"> <b>Created January 2016</b></span>
 					<br>
 					<hr>
@@ -448,10 +580,17 @@
 			<div class="Right display">
 				<hr style="clear: both">
 				<table style="margin: 0px auto; padding: 0; width: 100%">
-			
+					<tr>
+						<td>
+							<a href="http://www.pavipath.com/WebSite2016/" target="_blank">
+								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
+							</a>
+						</td>
+						<td><img class="scaled" src="./Icons/web.png"></td>
+					</tr>
 				<tr>
 				<td>
-					<a href="https://github.com/awesomePavi/awesomePavi.github.io"> 
+					<a href="https://github.com/awesomePavi/WebSite2016"  target="_blank">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 					</a>
 				</td>
@@ -504,7 +643,7 @@
 			
 				<tr>
 				<td>
-					<a href="https://github.com/awesomePavi/About_Canada"> 
+					<a target="_blank" href="https://github.com/awesomePavi/About_Canada">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 					</a>
 				</td>
@@ -518,7 +657,7 @@
 
 				<tr>
 				<td>
-					<a href="https://github.com/88JumpingJacks"> 
+					<a target="_blank" href="https://github.com/88JumpingJacks">
 						<h3 class="scaleTo" style="padding: 0; margin: 0;">Jack Li</h3>
 					</a>
 				</td>
@@ -527,7 +666,7 @@
 
 				<tr>
 				<td>
-					<a href="https://github.com/mykongee"> 
+					<a target="_blank" href="https://github.com/mykongee">
 						<h3 class="scaleTo" style="padding: 0; margin: 0;">Mike Hong</h3>
 					</a>
 				</td>
@@ -536,7 +675,7 @@
 
 				<tr>
 				<td>
-					<a href="https://github.com/matthewngai"> 
+					<a target="_blank" href="https://github.com/matthewngai">
 						<h3 class="scaleTo" style="padding: 0; margin: 0;">Matthew Ngai</h3>
 					</a>
 				</td>
@@ -561,7 +700,7 @@
 					<span style="float: right;"> <b>Created March 2014</b></span>
 					<br>
 					<hr>
-					<span >First android app</span>
+					<span >First Android App</span>
 					<br>
 					<br>
 					This was truly my first android app, I worked on intensively for a few days and then quit on android (until a Hackathon in 2015). I made this application because I wanted a game that was simple and fun to play while waiting at the bus stop. The game is straight forward all you must do is dodge the falling blocks. The game itself is very inefficient but the idea was simple enough, on first load it would create the images based on the phone’s resolution and size, then the gameplay would be randomly spaced and placed falling blocks. 
@@ -589,7 +728,7 @@
 			
 				<tr>
 				<td>
-					<a href="https://www.dropbox.com/s/qdap1mhb4poaj2m/BlockEvader1.3.apk?dl=0"> 
+					<a target="_blank" href="https://www.dropbox.com/s/qdap1mhb4poaj2m/BlockEvader1.3.apk?dl=0">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on Dropbox</h3>
 					</a>
 				</td>
@@ -644,7 +783,7 @@
 			
 				<tr>
 				<td>
-					<a href="https://github.com/awesomePavi/Tetraverse"> 
+					<a target="_blank" href="https://github.com/awesomePavi/Tetraverse">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 					</a>
 				</td>
@@ -673,7 +812,7 @@
 
 				<tr>
 				<td>
-					<a href="https://ca.linkedin.com/in/shirley-xiao-b72335a7"> 
+					<a target="_blank" href="https://ca.linkedin.com/in/shirley-xiao-b72335a7">
 						<h3 class="scaleTo" style="padding: 0; margin: 0;">Shirley Xiao</h3>
 					</a>
 				</td>
@@ -698,7 +837,7 @@
 					<span style="float: right;"> <b>Created September 2010</b></span>
 					<br>
 					<hr>
-					<span >Grade 9 - Intro to programming</span>
+					<span >Grade 9 - Intro to Programming</span>
 					<br>
 					<br>
 					This was the first program that I made with graphics. In high school I was not able to appreciate the text based programs we were working on in class because it seemed too simple. During class I would typically finish my work early and use the reference guide to find new things. I taught myself arrays, graphics, and loops. Than made this snake game to show my work, this very high level language is what made me finally decide to become a Software Engineer.
@@ -714,7 +853,7 @@
 			
 				<tr>
 				<td>
-					<a href="https://github.com/awesomePavi/Weather-Stn-Anly_2XB3"> 
+					<a href="https://github.com/awesomePavi/Weather-Stn-Anly_2XB3"  target="_blank">
 					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
 					</a>
 				</td>
