@@ -11,9 +11,15 @@
 	<script src="./Javascript/indexSizing.js"></script>
 	<script src="./Javascript/Skillbar.js"></script>
 	<script src="./Javascript/downloads.js"></script>
+	<script>
+		function completePage() {
+			fixDivs();
+			document.getElementsByTagName("BODY")[0].className = 'bgMain';
+		}
+	</script>
 </head>
 
-<body onload="fixDivs()">
+<body onload="completePage();">
 
 	<div class="topHeader">
 		<div id="headerLeft" class="Left alignTo">
@@ -88,7 +94,7 @@
 								</li>
 							</ul>
 
-							<span >Relevant Prokjects</span>
+							<span >Relevant Projects</span>
 							<hr>
 							<ul >
 								<li>
@@ -118,7 +124,7 @@
 						<div class="divWrapper">
 							<ul >
 								<li>
-									Graduated with Specalist High School Major in Business, which is given to students who push their main focus toward business learning throughout highschool
+									Graduated with Specialist High School Major in Business, which is given to students who push their main focus toward business learning throughout highschool
 								</li>
 								<br>
 								<li>
@@ -126,7 +132,7 @@
 								</li>
 							</ul>
 
-							<span>Relevant Prokjects</span>
+							<span>Relevant Projects</span>
 							<hr>
 							<ul>
 								<li>
@@ -246,62 +252,56 @@
 					<div class="divWrapper">
 						
 					</div>
+					<div class="skillbar clearfix " data-percent="90%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>Object&nbspOriented&nbspDesign</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="80%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>Interface&nbspImplementation</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="70%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>Prototyping</span></div>
+					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					</div>
+
 					<div class="skillbar clearfix " data-percent="75%">
-					<div class="skillbar-title" style="background: #FFFFFF;"><span>JAVA</span></div>
-					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
-					<div class="skill-bar-percent">%</div>
+						<div class="skillbar-title" style="background: #FFFFFF;"><span>GIT&nbspVersion&nbspControl</span></div>
+						<div class="skillbar-bar" style="background: #FFFFFF;"></div>
 					</div>
 
-					<div class="skillbar clearfix " data-percent="60%">
-					<div class="skillbar-title" style="background: #FFFFFF;"><span>JAVASCRIPT</span></div>
-					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
-					<div class="skill-bar-percent">%</div>
-					</div>
 
-					<div class="skillbar clearfix " data-percent="60%">
-					<div class="skillbar-title" style="background: #FFFFFF;"><span>BASH</span></div>
-					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
-					<div class="skill-bar-percent">%</div>
-					</div>
-
-					<div class="skillbar clearfix " data-percent="50%">
-					<div class="skillbar-title" style="background: #FFFFFF;"><span>C++</span></div>
-					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
-					<div class="skill-bar-percent">%</div>
-					</div>
 
 			
 					<div class="spacer"></div>
-					
 
-					<div class="skillbar clearfix " data-percent="75%">
-					<div class="skillbar-title" style="background: #FFFFFF;"><span>GIT&nbspVERSION&nbspCONTROL</span></div>
+					<div class="skillbar clearfix " data-percent="60%">
+						<div class="skillbar-title" style="background: #FFFFFF;"><span>Hardware&nbspInterfacing</span></div>
+						<div class="skillbar-bar" style="background: #FFFFFF;"></div>
+					</div>
+
+
+					<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>DataBase&nbspQueries</span></div>
 					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
-					<div class="skill-bar-percent">%</div>
 					</div>
 
 					<div class="skillbar clearfix " data-percent="50%">
-					<div class="skillbar-title" style="background: #FFFFFF;"><span>LATEX</span></div>
+					<div class="skillbar-title" style="background: #FFFFFF;"><span>Data&nbspAnalytics</span></div>
 					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
-					<div class="skill-bar-percent">%</div>
-					</div>
-
-					<div class="skillbar clearfix " data-percent="90%">
-					<div class="skillbar-title" style="background: #FFFFFF;"><span>ARDUINO</span></div>
-					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
-					<div class="skill-bar-percent">%</div>
 					</div>
 
 					<div class="skillbar clearfix " data-percent="70%">
 					<div class="skillbar-title" style="background: #FFFFFF;"><span>OFFICE&nbspSUITE</span></div>
 					<div class="skillbar-bar" style="background: #FFFFFF;"></div>
-					<div class="skill-bar-percent">%</div>
+
 					</div>
 
 					
 				</div>
 
-				<div class="spacer"></div>
 				
 				<div >
 					<h2 style="padding-bottom: 0px; margin-bottom: 0px; float: right">Competitions</h2>
@@ -408,13 +408,13 @@
 					<div class="btn-title" style="width: 100%; background: #00a8ff;"><span>RESUME ONE PAGE</span></div>
 					</div>
 
-					<div class="btn" onclick="downloadResTwoPG()">
+					<div class="btn" onclick="downloadICPC()">
 					<div class="btn-title" style="width: 100%; background: #00a8ff;"><span>ICPC Certificates</span></div>
 					</div>
 
-					<div class="btn" onclick="downloadCV()">
-					<div class="btn-title" style="width: 100%; background: #00a8ff;"><span>CURRICULUM VITAE</span></div>
-					</div>
+					<!--<div class="btn" onclick="downloadCV()">-->
+					<!--<div class="btn-title" style="width: 100%; background: #00a8ff;"><span>CURRICULUM VITAE</span></div>-->
+					<!--</div>-->
 
 				</div>
 			</div>

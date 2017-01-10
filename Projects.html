@@ -11,9 +11,15 @@
 	<script src="./Javascript/indexSizing.js"></script>
 	<script src="./Javascript/Skillbar.js"></script>
 	<script src="./Javascript/downloads.js"></script>
+	<script>
+		function completePage() {
+			fixDivs();
+			document.getElementsByTagName("BODY")[0].className = 'bgMain';
+		}
+	</script>
 </head>
 
-<body onload="fixDivs()">
+<body onload="completePage();">
 
 	<div class="topHeader">
 		<div id="headerLeft" class="Left alignTo">
@@ -139,7 +145,7 @@
 					<br>
 					<br>
 					The idea behind the program was a test run for a scalable system, building off the idea of how much computing power is wasted by computers idling. As a proof of
-					concept a simple data set of metorite finding across the globe over 100 years was used, where the system would use distributed computing to calculate the likelyhood of
+					concept a simple data set of meteorite findings across the globe over 100 years was used, where the system would use distributed computing to calculate the likelyhood of
 					another meteorite hitting a particular location. The system
 					that was built used servers provided by <a target="_blank" href="https://www.1and1.com">1&1</a>, to handle, distribute and merge data. The system would break the
 					data up into sectors's based on longitude and latitude server side; then when a connection is made it sends a random sector to the connected computer to be
@@ -151,7 +157,7 @@
 					<br>
 					The system had two sides to it a client side and the public side. The client side included an interface to upload data to the server and specify parameters
 					for the analysis; the public side consisted of a front facing interface to explain to users what will be happening and where their contribution is going,
-					Then a graphic is used to show the progress of the data being crunched b ythe browser followed by a world map filled with current density information from,
+					Then a graphic is used to show the progress of the data being crunched by the browser followed by a world map filled with current density information from,
 					already crunched data.
 					<br>
 					<br>
@@ -192,7 +198,7 @@
 					<span>McMaster Programming Competition</span>
 					<br>
 					<br>
-					For the competition, we choose to implement an AM/FM Radio brodcasting system to distribute crucial weather information to nearby refugees attempting
+					For the competition, we choose to implement an AM/FM Radio broadcasting system to distribute crucial weather information to nearby refugees attempting
 					to navigate open waters. The system was built in C++ for we believed that it would require the least amount of resources to operate, as it does not
 					require hardware to run a JVM in order to run, but compiles directly into machine code. The system needed to be robust and had to account for
 					<ul>
@@ -208,22 +214,22 @@
 					<br>
 					<br>
 					The system we devised would always scan for an AM and FM frequency which is open on start-up, the frequency is chosen at random, to minimize the chances
-					of nearby Buoys interfering with each other, the logic for this is that when a frequency is selcted the reciever is used to check for interference. In
+					of nearby Buoys interfering with each other, the logic for this is that when a frequency is selected the receiver is used to check for interference. In
 					an area where there is a dense population of Buoys if signals were selected sequentially from 535 kHz to 1700 kHz (AM), then each starting buoy would
 					spend important time checking all the frequencies until it finds an open one, the randomization on startup aims to minimize this issue.
 					<br>
 					<br>
-					Messages to be brodcast are received by the system from the weather module and ocean ocnsitionds module, the system would queue up weather
+					Messages to be broadcast are received by the system from the weather module and ocean conditions module, the system would queue up weather
 					data and ocean conditions then would alternate its transmissions of the two pieces of data, the queue used for this prioritizes messages by time and deque any old information
 					if more current data is available. The queue overrides any transmissions if it see's an extreme warning from either the weather module or ocean conditions
 					module. The information from the queue is sent to another module to create a human friendly message
 					and broadcast it. The module converts the input information into simple speech using a series of filters and bins (implementation not in scope of
-					competition), once a message was converted to speech it was broadcast on both the AM and FM bands (The brodcasting of the messages was out of scope of
+					competition), once a message was converted to speech it was broadcast on both the AM and FM bands (The broadcasting of the messages was out of scope of
 					the competition).
 					<br>
 					<br>
-					The system will be placed in open water where it must put up with horrendous conditions the system for this reason must be able to notify if it is non-functioanl
-					such that it may be fixed. On startup and periodically on a schedule the system is checked for functionality by brodcasting a signal on it's AM and FM bands and
+					The system will be placed in open water where it must put up with horrendous conditions the system for this reason must be able to notify if it is non-functional
+					such that it may be fixed. On startup and periodically on a schedule the system is checked for functionality by broadcasting a signal on it's AM and FM bands and
 					then using the receiver to check if the signal received matched the expected output signal. If an issue arises the Buoy uses the AdHoc network to send a message
 					across the network to notify a repair is required.
 					<br>
@@ -484,7 +490,11 @@
 					<span>Course Long Project</span>
 					<br>
 					<br>
-					This application's intended purpose is to identify weather stations which are not required and may be relocated. The application does this by first placing all stations in a un-directed edge weighted graph, After this the graph is converted into a minimum spanning tree while only keeping edges between stations whom's weather data is accurate to one another's within the user's specified tolerances. At this point the nodes with the greatest number of edges is removed, which leaves one of three node types. The first are stations which cannot be used to predict other stations, the seconds stations used to predict stations, and the third stations predicted. At this point the program then checks if the new layout is still accurate within user tolerances and to do this the program checks the layout over two additional years. At this point all data processing has been completed where it is put into a Json file and is displayed for the user.
+					This application's intended purpose is to identify weather stations which are not required and may be relocated. The application does this by first placing all stations in a un-directed edge
+					weighted graph, After this the graph is converted into a minimum spanning tree while only keeping edges between stations whom's weather data is accurate to one another's within the user's specified
+					tolerances. At this point the nodes with the greatest number of edges is removed, which leaves one of three node types. The first are stations which cannot be used to predict other stations, the seconds
+					stations used to predict stations, and the third stations predicted. At this point the program then checks if the new layout is still accurate within user tolerances and to do this the program checks
+					the layout over two additional years. At this point all data processing has been completed where it is put into a Json file and is displayed for the user.
 					<br>
 					<br>
 					On the technical side, the program uses a Model View Controller design. The Model being the backend which is built in ruby and harnesses an SQLite3 database for the data storage and manipulation. The Controller is the server which uses the Sinatra API to effectively connect the Front-end to the Back-end. The View is written in HTML/CSS/Java-Script, and uses an electron wrapper to allow it to act as a standalone application.
@@ -570,7 +580,10 @@
 					<span>Built to showcase my work</span>
 					<br>
 					<br>
-					This is my original personal website. Hosted via GitHub and with a domain name provided by name cheap. I created this website because I wanted a way to showcase my CV easily for everyone to see, and so I can keep track of what I've done. I dabbled with WordPress, which boasts an intuitive interface, but I found it cumbersome and was unable to find the layout that I desired. At this point I decided since I knew enough about HTML and CSS, from when I played with it in high school, I would construct my own site from scratch. I took out my pencil and paper drew out a design, chose a colour palette, and got to work.
+					This is my original personal website. Hosted via GitHub and with a domain name provided by name cheap. I created this website because I wanted a way to showcase my CV easily for
+					everyone to see, and so I can keep track of what I've done. I dabbled with WordPress, which boasts an intuitive interface, but I found it cumbersome and was unable to find the
+					layout that I desired. At this point I decided since I knew enough about HTML and CSS, from when I played with it in high school, I would construct my own site from scratch. I took
+					out my pencil and paper drew out a design, chose a colour palette, and got to work.
 					<br>
 					<br>
 					This was implemented through HTML, CSS and Javascript
@@ -617,7 +630,8 @@
 					<span>Hack Western 2 - Project to help Immigrants</span>
 					<br>
 					<br>
-					This application was made for android by Mike Hong, Jack Li, Matthew Ngai and myself. This application is targeted to those who are new to the country and do not know much about the culture and customs and is designed to make the transition to Canadian life simpler. 
+					This application was made for android by Mike Hong, Jack Li, Matthew Ngai and myself. This application is targeted to those who are new to the country and do not know much
+					about the culture and customs and is designed to make the transition to Canadian life simpler.
 					<br>
 					Some key features the application offers include:
 					<ul>
@@ -703,7 +717,9 @@
 					<span >First Android App</span>
 					<br>
 					<br>
-					This was truly my first android app, I worked on intensively for a few days and then quit on android (until a Hackathon in 2015). I made this application because I wanted a game that was simple and fun to play while waiting at the bus stop. The game is straight forward all you must do is dodge the falling blocks. The game itself is very inefficient but the idea was simple enough, on first load it would create the images based on the phone’s resolution and size, then the gameplay would be randomly spaced and placed falling blocks. 
+					This was truly my first android app, I worked on intensively for a few days and then quit on android (until a Hackathon in 2015). I made this application because
+					I wanted a game that was simple and fun to play while waiting at the bus stop. The game is straight forward all you must do is dodge the falling blocks. The game itself is
+					very inefficient but the idea was simple enough, on first load it would create the images based on the phone’s resolution and size, then the gameplay would be randomly spaced and placed falling blocks.
 					<br>
 					The game had features that I believe more applications should have:
 					<ul>
@@ -755,7 +771,8 @@
 					<span >Summative Assignment</span>
 					<br>
 					<br>
-					This was the first large program that I worked on in a team. Over 3 months we made a custom rendition of the classic game Tetris. We designed and implemented a 3D-Render engine from scratch and implemented our rendition on the classic game Tetris.
+					This was the first large program that I worked on in a team. Over 3 months we made a custom rendition of the classic game Tetris. We designed and
+					implemented a 3D-Render engine from scratch and implemented our rendition on the classic game Tetris.
 					<br>
 					The features that set this game apart from the rest were:
 					<ul>
@@ -840,7 +857,9 @@
 					<span >Grade 9 - Intro to Programming</span>
 					<br>
 					<br>
-					This was the first program that I made with graphics. In high school I was not able to appreciate the text based programs we were working on in class because it seemed too simple. During class I would typically finish my work early and use the reference guide to find new things. I taught myself arrays, graphics, and loops. Than made this snake game to show my work, this very high level language is what made me finally decide to become a Software Engineer.
+					This was the first program that I made with graphics. In high school I was not able to appreciate the text based programs we were working on
+					in class because it seemed too simple. During class I would typically finish my work early and use the reference guide to find new things. I
+					taught myself arrays, graphics, and loops. Than made this snake game to show my work, this very high level language is what made me finally decide to become a Software Engineer.
 					<br>
 					<br>
 					This used the Batch Sequential and was implemented with Turing.

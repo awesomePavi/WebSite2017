@@ -1,15 +1,15 @@
 function downloadResOnePG(){
-	var url='../Download/Resume.pdf';    
+	var url='./Download/Resume.pdf';
      window.open(url, 'Download');  
 }
 
-function downloadResTwoPG(){
-	var url='../Download/Resume.pdf';    
+function downloadICPC(){
+	var url='./Download/ICPC_CERTIF.pdf';
      window.open(url, 'Download');  
 }
 
 function downloadCV(){
-	var url='../Download/Resume.pdf';    
+	var url='./Download/Resume.pdf';
      window.open(url, 'Download');  
 }
 
