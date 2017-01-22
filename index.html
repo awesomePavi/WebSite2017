@@ -2,9 +2,9 @@
 <html>
 <head>
 <script>
-    if (location.protocol != 'http:' && window.location.href.indexOf('?') < 0)
+    if (location.protocol != 'https:' && window.location.href.indexOf('?') < 0)
     {
-        location.href =  window.location.href.substring(window.location.protocol.length) +'?';
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length) +'?';
     }
   </script>
 	<title>Pavi Path</title>
