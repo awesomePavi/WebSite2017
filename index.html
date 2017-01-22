@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+    if (location.protocol != 'http:' && window.location.href.indexOf('?') < 0)
+    {
+        location.href =  window.location.href.substring(window.location.protocol.length) +'?';
+    }
+  </script>
 	<title>Pavi Path</title>
 	<meta name="viewport" content="width=device-width">
 

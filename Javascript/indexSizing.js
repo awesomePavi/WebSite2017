@@ -11,8 +11,8 @@ function fixDivs(){
 	var scaled = $(".scaled");
 	var scaleTo = $(".scaleTo");
 	for (var i =0; i<scaleTo.length;i++){
-		console.log($(scaleTo[i]).height());
-		console.log($(scaled[i]).height());
+		// console.log($(scaleTo[i]).height());
+		// console.log($(scaled[i]).height());
 		$(scaled[i]).height($(scaleTo[i]).height());
 		$(scaled[i]).width($(scaleTo[i]).height());
 	}

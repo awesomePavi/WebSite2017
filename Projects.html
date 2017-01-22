@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <script>
+    if (location.protocol != 'http:' && window.location.href.indexOf('?') < 0)
+    {
+        location.href =  window.location.href.substring(window.location.protocol.length) +'?';
+    }
+  </script>
+
 	<title>Pavi Path</title>
 	<meta name="viewport" content="width=device-width">
 
@@ -56,6 +63,76 @@
 			<h1>GITHUB</h1>
 		</div>
 	</div>
+
+	<div class="spacer"></div>
+
+	<div class="fullWidth">
+
+		<div class="spacer"></div>
+
+		<div class="projects">
+			<div class="Left ">
+				<hr style="clear: both">
+				<br>
+
+				<img style="width: 25%; float: left;" src="./Img/chat1.png">
+				<div style="padding-left: 5%;width:70%; float: right">
+					<span style="float: left;"> <b>Chat Room</b></span>
+					<span style="float: right;"> <b>Created January 2017</b></span>
+					<br>
+					<hr>
+					<span>First Project Using WebSockets</span>
+					<br>
+					<br>
+					The purpose of this website was to use real-time web and harness web-sockets in a project which, can reflect a product in the real world.
+					<br>
+					<br>
+					The site prompts for a username to be entered upon loading. The server then sends back any chat logs so the new user can view the history of the chat. Each user is given a unique colour in the chat window. The chat currently only supports text-based chat, but on mobile you are able to include emoticons. The message field is located at the top of the page, to deal with issues with software keyboards on mobile
+					<br>
+					<br>
+					What's Next:
+					<ul>
+					<li>
+					Private Messaging
+					</li>
+					<li>
+					Forcing Unqiue Usernames
+					</li>
+					<li>
+					Functional Disconnect system
+					</li>
+					<li>
+					Move messaging to bottom of page
+					</li>
+					</ul>
+
+					This was a server-client implementation. Client-side HTML with Javascript, JQuery and socket.io. Server-side Node.js using express and socket.io; hosted on Microsoft Azure.
+				</div>
+
+			</div>
+			<div class="Right display ">
+				<hr style="clear: both">
+				<table style="margin: 0px auto; padding: 0; width: 100%">
+					<tr>
+						<td>
+							<a href="http://chat.pavipath.com" target="_blank">
+								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
+							</a>
+						</td>
+						<td><img class="scaled" src="./Icons/web.png"></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://github.com/awesomePavi/chatRoom" target="_blank">
+								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+							</a>
+						</td>
+						<td><img class="scaled" src="./Icons/git.png"></td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
 
 	<div class="spacer"></div>
 
