@@ -20,6 +20,7 @@
 	<script>
 		function completePage() {
 			fixDivs();
+            animate();
 			document.getElementsByTagName("BODY")[0].className = 'bgMain';
 		}
 	</script>
@@ -42,8 +43,6 @@
 				<b>pathmap@mcmaster.ca</b>
 				<br>
 				<b>(905) 599 7284</b>
-				<br>
-				<b>19431 Dufferin St. Newmarket ON L3Y4V9</b>
 			</div>
 		</div>
 	</div>
@@ -67,7 +66,7 @@
 
 	<div class="fullWidth">
 		<div class="pageWidth">
-			<div class="Left">
+			<div id="checkWidth" class="Left">
 				<div>
 					<h2 style="padding-bottom: 0px; margin-bottom: 0px; float: left">Education</h2>
 					<hr style="clear: both">

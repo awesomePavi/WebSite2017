@@ -47,10 +47,6 @@ function fixDivs(){
 		$(skillbar[i]).css('background',colourUse);
 
 	}
-
-
-
-	animate();
 }
 
 function getColourBars(percentAmount){

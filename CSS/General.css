@@ -51,7 +51,7 @@ td a {
 
 .fullWidth:before, .topHeader:before{
 	
-	 filter        : blur(50px);
+	 filter       : blur(50px);
     -moz-filter   : blur(50px);
     -webkit-filter: blur(50px);
     -o-filter     : blur(50px);
@@ -96,6 +96,15 @@ td a {
 } 
 .projects .Right{
 	width: 26%;
+}
+
+.projects .Left img {
+	width: 25%;
+
+}
+
+.projects .Left div {
+	width: 70%;
 }
 
 
@@ -170,15 +179,33 @@ td a {
 	margin:2px;
    border:2px solid #021a40;
 }
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 701px) {
 	.headerImage{
 		max-width: 300px;
 		float: right;
 	}
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 1000px) {
+	.pageWidth, .projects,.projects .Left img, .projects .Left div {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
  	.Left, .Right, .col13, .headerImage, .pageWidth .Left, .pageWidth .Right {
  		width: 100%;
+		max-width: 100%;
  		/*background-color: green;*/
  	}
+
+	.projects, .projects .Left, .projects .Right,.projects .Left img, .projects .Left div {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#headerRight{
+		text-align: center;
+	}
 }
