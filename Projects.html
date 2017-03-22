@@ -7,8 +7,8 @@
         location.href = 'https:' + window.location.href.substring(window.location.protocol.length) +'?';
     }
   </script>
-
-	<title>Pavi Path</title>
+	<link rel="icon" type="image/png" href="./Icons/favico256.png">
+	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" type="text/css" href="./CSS/General.css">
@@ -144,21 +144,37 @@
 				<hr style="clear: both">
 				<br>
 
-				<img style=" float: left;" src="./Img/StoA.png">
+				<img style=" float: left;" src="./Img/ASConverter.png">
 				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Spotify To Apple Music Converter</b></span>
+					<span style="float: left;"> <b>Apple Music Spotify ~ Playlist Converter</b></span>
 					<span style="float: right;"> <b>Created December 2016</b></span>
 					<br>
 					<hr>
 					<span>No suitable products on market</span>
 					<br>
 					<br>
-					The purpose of this website was simply founded, I have been a long time Spotify user and have recently changed services to Apple Music. I searched the web in attempt
-					to find a program or service which would allow me to transfer my Specify playlist over to Apple Music. I was unable to find any services that worked which did not
-					require IOS, or were free, or used security vulnerabilities which were patched as of ITunes version 12.5.4. To this end I decided it would be in my best interest to
-					create my own system.
+					The purpose of this website is simple to aid in the conversion of AppleMusic and Spotify playlists across platforms.The reason for the development of this website
+					occured in two steps. First I was a long time spotify user who switched to apple music, so I made a system to convert Spotify Playlists to Apple Music, a little
+					while later I switched back to Spotify and then needed to convert an Apple Music Playlist to a Spotify Playlist. I was unable to find any free service which did
+					not require an IOS device or were free (which did not use security vulnerabilities which were patched as of ITunes version 12.5.4). to this end I decided it
+					would be in my best interest to create my own system to do this.
 					<br>
 					<br>
+					<h3>Apple Music To Spotify</h3>
+					The system required a public share link for an ITunes playlist to be provided. Using the apple music toolbox the playlist can be converted to a nice widget. From this point
+					the system converted the playlist in 5 steps:
+					<ul>
+						<li> Use the Spotify API to gain access to Create and Search API</li>
+						<li> Parse the Apple Music Widget, to get Song Titles and Artists</li>
+						<li> Check if a spotify playlist has the same name, if so prompt the user</li>
+						<li> Use the Spotify search API to find the songs then add them to the created palylist</li>
+						<li> Display the new playlist as a widget and let the user know what songs could not be added automatically</li>
+					</ul>
+					The biggest issue that I am currently having with this implemention is the search accruacy, for a portion of the songs are being picked up as an Accapela cover,
+					or another variant of the orignal song.
+					<br>
+					<br>
+					<h3>Spotify To Apple Music</h3>
 					The idea I had was simple, to re-create the ITunes playlist structure I did this by making a simple apple music playlist and exporting it from ITunes. I reverse
 					engineered the playlist style and discovered what information I would need to successfully mimic a playlist. I went about building this playlist builder in 4 steps:
 					<ul>
@@ -185,7 +201,7 @@
 				<table style="margin: 0px auto; padding: 0; width: 100%">
 					<tr>
 						<td>
-							<a href="http://stoa.pavipath.com" target="_blank">
+							<a href="http://www.ASplaylist.tk" target="_blank">
 								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
 							</a>
 						</td>
