@@ -50,7 +50,7 @@ td a {
 }
 
 .fullWidth:before, .topHeader:before{
-	
+
 	 filter       : blur(50px);
     -moz-filter   : blur(50px);
     -webkit-filter: blur(50px);
@@ -62,6 +62,16 @@ td a {
 
 .topHeader{
 	width: 100%;
+	display: flex;
+}
+
+#headerLeft{
+	width: 50%;
+}
+#headerRight{
+	width: 50%;
+	display: flex;
+	align-items: center;
 }
 
 
@@ -200,12 +210,23 @@ td a {
  		/*background-color: green;*/
  	}
 
+	.topHeader{
+		display: block;
+	}
+
+	#headerLeft{
+		width: 100%;
+	}
+	#headerRight{
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
 	.projects, .projects .Left, .projects .Right,.projects .Left img, .projects .Left div {
 		width: 100%;
 		max-width: 100%;
 	}
 
-	#headerRight{
-		text-align: center;
-	}
+
 }
