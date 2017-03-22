@@ -18,9 +18,9 @@ function goToGit(){
 }
 
 function goToProjects(){
-	window.location = "./Projects.html";
+	window.location = "./Projects";
 }
 
 function goToIndex(){
-	window.location = "./index.html";
+	window.location = "./";
 }
