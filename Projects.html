@@ -95,7 +95,7 @@
 					Private Messaging
 					</li>
 					<li>
-					Forcing Unqiue Usernames
+					Forcing Unique Usernames
 					</li>
 					<li>
 					Functional Disconnect system
@@ -159,7 +159,7 @@
 					create my own system.
 					<br>
 					<br>
-					The idea I ahd was simple, to re-create the ITunes playlist structure I did this by making a simple apple music playlist and exporting it from ITunes. I reverse
+					The idea I had was simple, to re-create the ITunes playlist structure I did this by making a simple apple music playlist and exporting it from ITunes. I reverse
 					engineered the playlist style and discovered what information I would need to successfully mimic a playlist. I went about building this playlist builder in 4 steps:
 					<ul>
 						<li> Use the Spotify API to gain access to Spotify playlist and track info</li>
@@ -168,11 +168,11 @@
 						<li> Use the ITunes search API, and search songs with the track name and artist provided by Spotify. Assuming the first result returned was correct</li>
 					</ul>
 					The biggest issue I ran into occurred at the 4th step, for Apple Music requires composer information in the playlist file in-order to successfully include the
-					track. This is a piece of Data that I was unable toget from the ITunes API. I then explored different options trying to play with AppleScripts and Apple Music
+					track. This is a piece of Data that I was unable to get from the ITunes API. I then explored different options trying to play with AppleScripts and Apple Music
 					API to make a desktop based system but the API for Apple Music in its current capacity is for IOS.
 					<br>
 					<Br>
-					Due to these setbacks the website currently creates Spotify widgets with its Apple Music counterpart, allowing users to find their tracks in Apple Music but until furthuer
+					Due to these setbacks the website currently creates Spotify widgets with its Apple Music counterpart, allowing users to find their tracks in Apple Music but until further
 					notice the automated transfer of a playlist is unlikely to occur.
 					<br>
 					<br>
@@ -221,12 +221,12 @@
 					<br>
 					<br>
 					The idea behind the program was a test run for a scalable system, building off the idea of how much computing power is wasted by computers idling. As a proof of
-					concept a simple data set of meteorite findings across the globe over 100 years was used, where the system would use distributed computing to calculate the likelyhood of
+					concept a simple data set of meteorite findings across the globe over 100 years was used, where the system would use distributed computing to calculate the likelihood of
 					another meteorite hitting a particular location. The system
 					that was built used servers provided by <a target="_blank" href="https://www.1and1.com">1&1</a>, to handle, distribute and merge data. The system would break the
-					data up into sectors's based on longitude and latitude server side; then when a connection is made it sends a random sector to the connected computer to be
+					data up into sector's based on longitude and latitude server side; then when a connection is made it sends a random sector to the connected computer to be
 					analyzed (the sector is chosen at random to try and compensate for concurrency issues that may arise from sequential sector analysis). The user's computer would
-					receive the data and would process the data with code embeded into the page, once the analysis is completed it is sent back to the server, which flags the sector
+					receive the data and would process the data with code embedded into the page, once the analysis is completed it is sent back to the server, which flags the sector
 					as complete. Then the server merges the analyzed sector to the completed data set, which contains meteor distribution density across the globe. Each time a user
 					computer completes another sector everyone which goes to the site can see the output from completed sectors as a world map with different shaded sectors on it.
 					<br>
@@ -296,8 +296,8 @@
 					<br>
 					<br>
 					Messages to be broadcast are received by the system from the weather module and ocean conditions module, the system would queue up weather
-					data and ocean conditions then would alternate its transmissions of the two pieces of data, the queue used for this prioritizes messages by time and deque any old information
-					if more current data is available. The queue overrides any transmissions if it see's an extreme warning from either the weather module or ocean conditions
+					data and ocean conditions then would alternate its transmissions of the two pieces of data, the queue used for this prioritizes messages by time and dequeue any old information
+					if more current data is available. The queue overrides any transmissions if it receives an extreme warning from either the weather module or ocean conditions
 					module. The information from the queue is sent to another module to create a human friendly message
 					and broadcast it. The module converts the input information into simple speech using a series of filters and bins (implementation not in scope of
 					competition), once a message was converted to speech it was broadcast on both the AM and FM bands (The broadcasting of the messages was out of scope of
@@ -383,7 +383,7 @@
 					<br>
 					<br>
 					The goal for the semester was to advance our documentation, requirements and testing skills to do this the task was to find an existing project and improve it's documentation.
-					A decision was made to try and port a game over from Java to the web such that it would not ahve to be downloaded and ran locally, to try and show that with the power of modern computers
+					A decision was made to try and port a game over from Java to the web such that it would not have to be downloaded and ran locally, to try and show that with the power of modern computers
 					simple games can be developed for the browser, allowing for ease of access to anyone. Over the course of a semester the requirements and interface spec was created.
 					<br>
 					<br>
@@ -567,13 +567,13 @@
 					<br>
 					<br>
 					This application's intended purpose is to identify weather stations which are not required and may be relocated. The application does this by first placing all stations in a un-directed edge
-					weighted graph, After this the graph is converted into a minimum spanning tree while only keeping edges between stations whom's weather data is accurate to one another's within the user's specified
+					weighted graph, After this the graph is converted into a minimum spanning tree while only keeping edges between stations who's weather data is accurate to one another's within the user's specified
 					tolerances. At this point the nodes with the greatest number of edges is removed, which leaves one of three node types. The first are stations which cannot be used to predict other stations, the seconds
 					stations used to predict stations, and the third stations predicted. At this point the program then checks if the new layout is still accurate within user tolerances and to do this the program checks
-					the layout over two additional years. At this point all data processing has been completed where it is put into a Json file and is displayed for the user.
+					the layout over two additional years. At this point all data processing has been completed where it is put into a JSON file and is displayed for the user.
 					<br>
 					<br>
-					On the technical side, the program uses a Model View Controller design. The Model being the backend which is built in ruby and harnesses an SQLite3 database for the data storage and manipulation. The Controller is the server which uses the Sinatra API to effectively connect the Front-end to the Back-end. The View is written in HTML/CSS/Java-Script, and uses an electron wrapper to allow it to act as a standalone application.
+					On the technical side, the program uses a Model View Controller design. The Model being the back-end which is built in ruby and harnesses an SQLite3 database for the data storage and manipulation. The Controller is the server which uses the Sinatra API to effectively connect the Front-end to the Back-end. The View is written in HTML/CSS/Java-Script, and uses an electron wrapper to allow it to act as a standalone application.
 				</div>
 
 			</div>
@@ -795,7 +795,7 @@
 					<br>
 					This was truly my first android app, I worked on intensively for a few days and then quit on android (until a Hackathon in 2015). I made this application because
 					I wanted a game that was simple and fun to play while waiting at the bus stop. The game is straight forward all you must do is dodge the falling blocks. The game itself is
-					very inefficient but the idea was simple enough, on first load it would create the images based on the phone’s resolution and size, then the gameplay would be randomly spaced and placed falling blocks.
+					very inefficient but the idea was simple enough, on first load it would create the images based on the phone’s resolution and size, then the game play would be randomly spaced and placed falling blocks.
 					<br>
 					The game had features that I believe more applications should have:
 					<ul>
@@ -856,7 +856,7 @@
 							New Blocks: 1x1, 2x1, 3x1, miniature L, Bomb (Blew up blocks)
 						</li>
 						<li>
-							Screen Rotation: Rotating the game and phsycis 90, 180 and 270 degrees randomly
+							Screen Rotation: Rotating the game and physics 90, 180 and 270 degrees randomly
 						</li>
 						<li>
 							Custom Game Mode: You can include or exclude any features
