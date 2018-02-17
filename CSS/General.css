@@ -197,8 +197,7 @@ td a {
 }
 @media only screen and (min-width: 701px) {
 	.headerImage{
-		max-width: 200px;
-		float: right;
+		max-width: 100px;
 	}
 }
 
