@@ -6,9 +6,9 @@ html{
 
 body{
 	background-color: var(--main-bg-color);
-	
 
-  
+
+
 }
 
 .bgMain{
@@ -67,7 +67,11 @@ td a {
 
 #headerLeft{
 	width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
+
 #headerRight{
 	width: 50%;
 	display: flex;
@@ -96,14 +100,14 @@ td a {
 	width: 50%;
 }
 
-.Right{ 
+.Right{
 	float: right;
 	width: 50%;
 }
 
 .projects .Left{
 	width: 70%;
-} 
+}
 .projects .Right{
 	width: 26%;
 }
@@ -136,7 +140,9 @@ td a {
 }
 
 .headerImage{
+  max-width: 100px;
 	width: 80%;
+  border-radius: 50%;
 }
 
 .gradBlackTrans {
@@ -191,7 +197,7 @@ td a {
 }
 @media only screen and (min-width: 701px) {
 	.headerImage{
-		max-width: 300px;
+		max-width: 200px;
 		float: right;
 	}
 }
