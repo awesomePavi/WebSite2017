@@ -105,7 +105,7 @@
                     </li>
                     </ul>
 
-                    This was a server-client implementation. Client-side HTML with Javascript, JQuery and socket.io. Server-side Node.js using express and socket.io; hosted on Microsoft Azure.
+                    This was a server-client implementation. Client-side HTML with Javascript, JQuery, and socket.io. Server-side Node.js using express and socket.io; hosted on Microsoft Azure.
                 </div>
 
             </div>
@@ -154,45 +154,43 @@
                     <br>
                     <br>
                     The purpose of this website is simple to aid in the conversion of AppleMusic and Spotify playlists across platforms.The reason for the development of this website
-                    occured in two steps. First I was a long time spotify user who switched to apple music, so I made a system to convert Spotify Playlists to Apple Music, a little
+                    occurred in two steps. First I was a long time Spotify user who switched to apple music, so I made a system to convert Spotify Playlists to Apple Music, a little
                     while later I switched back to Spotify and then needed to convert an Apple Music Playlist to a Spotify Playlist. I was unable to find any free service which did
-                    not require an IOS device or were free (which did not use security vulnerabilities which were patched as of ITunes version 12.5.4). to this end I decided it
+                    not require an IOS device or were free (which did not use security vulnerabilities which were patched as of iTunes version 12.5.4). to this end, I decided it
                     would be in my best interest to create my own system to do this.
                     <br>
                     <br>
                     <h3>Apple Music To Spotify</h3>
-                    The system required a public share link for an ITunes playlist to be provided. Using the apple music toolbox the playlist can be converted to a nice widget. From this point
+                    The system required a public share link for an iTunes playlist to be provided. Using the apple music toolbox the playlist can be converted to a nice widget. From this point
                     the system converted the playlist in 5 steps:
                     <ul>
                         <li> Use the Spotify API to gain access to Create and Search API</li>
                         <li> Parse the Apple Music Widget, to get Song Titles and Artists</li>
-                        <li> Check if a spotify playlist has the same name, if so prompt the user</li>
+                        <li> Check if a Spotify playlist has the same name if so prompt the user</li>
                         <li> Use the Spotify search API to find the songs then add them to the created palylist</li>
                         <li> Display the new playlist as a widget and let the user know what songs could not be added automatically</li>
                     </ul>
-                    The biggest issue that I am currently having with this implemention is the search accruacy, for a portion of the songs are being picked up as an Accapela cover,
-                    or another variant of the orignal song.
+                    The biggest issue that I am currently having with this implementation is the search accuracy, for a portion of the songs, are being picked up as an Acapella cover,
+                    or another variant of the original song.
                     <br>
                     <br>
                     <h3>Spotify To Apple Music</h3>
-                    The idea I had was simple, to re-create the ITunes playlist structure I did this by making a simple apple music playlist and exporting it from ITunes. I reverse
+                    The idea I had was simple, to re-create the iTunes playlist structure I did this by making a simple apple music playlist and exporting it from iTunes. I reverse
                     engineered the playlist style and discovered what information I would need to successfully mimic a playlist. I went about building this playlist builder in 4 steps:
                     <ul>
                         <li> Use the Spotify API to gain access to Spotify playlist and track info</li>
                         <li> Build a user interface to select a playlist to convert</li>
-                        <li> Create a downloadable text file to import into ITunes, through HTML and JavaScript</li>
-                        <li> Use the ITunes search API, and search songs with the track name and artist provided by Spotify. Assuming the first result returned was correct</li>
+                        <li> Create a downloadable text file to import into iTunes, through HTML and JavaScript</li>
+                        <li> Use the iTunes search API, and search songs with the track name and artist provided by Spotify. Assuming the first result returned was correct</li>
                     </ul>
-                    The biggest issue I ran into occurred at the 4th step, for Apple Music requires composer information in the playlist file in-order to successfully include the
-                    track. This is a piece of Data that I was unable to get from the ITunes API. I then explored different options trying to play with AppleScripts and Apple Music
+                    The biggest issue I ran into occurred at the 4th step, for Apple Music requires composer information in the playlist file in-order to successfully include the track. This is a piece of Data that I was unable to get from the iTunes API. I then explored different options trying to play with AppleScripts and Apple Music
                     API to make a desktop based system but the API for Apple Music in its current capacity is for IOS.
                     <br>
                     <Br>
-                    Due to these setbacks the website currently creates Spotify widgets with its Apple Music counterpart, allowing users to find their tracks in Apple Music but until further
-                    notice the automated transfer of a playlist is unlikely to occur.
+                    Due to these setbacks the website currently creates Spotify widgets with its Apple Music counterpart, allowing users to find their tracks in Apple Music but until further notice, the automated transfer of a playlist is unlikely to occur.
                     <br>
                     <br>
-                    This was a simple web-based implementation made using, HTML, JavaScript with the Spotify API, ITunes API and the Apple Music Toolbox.
+                    This was a simple web-based implementation made using, HTML, JavaScript with the Spotify API, iTunes API and the Apple Music Toolbox.
                 </div>
 
             </div>
@@ -236,19 +234,15 @@
                     <span>Yhack 2016</span>
                     <br>
                     <br>
-                    The idea behind the program was a test run for a scalable system, building off the idea of how much computing power is wasted by computers idling. As a proof of
-                    concept a simple data set of meteorite findings across the globe over 100 years was used, where the system would use distributed computing to calculate the likelihood of
-                    another meteorite hitting a particular location. The system
-                    that was built used servers provided by <a target="_blank" href="https://www.1and1.com">1&1</a>, to handle, distribute and merge data. The system would break the
-                    data up into sector's based on longitude and latitude server side; then when a connection is made it sends a random sector to the connected computer to be
-                    analyzed (the sector is chosen at random to try and compensate for concurrency issues that may arise from sequential sector analysis). The user's computer would
+                    The idea behind the program was a test run for a scalable system, building off the idea of how much computing power is wasted by computers idling. As a proof of concept a simple data set of meteorite findings across the globe over 100 years was used, where the system would use distributed computing to calculate the likelihood of another meteorite hitting a particular location. The system
+                    that was built used servers provided by <a target="_blank" href="https://www.1and1.com">1&1</a>, to handle, distribute and merge data. The system would break the data up into sector's based on longitude and latitude server side; then when a connection is made it sends a random sector to the connected computer to be analyzed (the sector is chosen at random to try and compensate for concurrency issues that may arise from sequential sector analysis). The user's computer would
                     receive the data and would process the data with code embedded into the page, once the analysis is completed it is sent back to the server, which flags the sector
                     as complete. Then the server merges the analyzed sector to the completed data set, which contains meteor distribution density across the globe. Each time a user
                     computer completes another sector everyone which goes to the site can see the output from completed sectors as a world map with different shaded sectors on it.
                     <br>
                     <br>
-                    The system had two sides to it a client side and the public side. The client side included an interface to upload data to the server and specify parameters
-                    for the analysis; the public side consisted of a front facing interface to explain to users what will be happening and where their contribution is going,
+                    The system had two sides to it a client side and the public side. The client-side included an interface to upload data to the server and specify parameters
+                    for the analysis; the public side consisted of a front-facing interface to explain to users what will be happening and where their contribution is going,
                     Then a graphic is used to show the progress of the data being crunched by the browser followed by a world map filled with current density information from,
                     already crunched data.
                     <br>
@@ -301,29 +295,20 @@
                             Interference from other buoys
                         </li>
                     </ul>
-                    The Bouy has access to a AdHoc network linked to all Buoys, and an AM/FM transmitter and Reliever. The program consists of three main parts start-up,
+                    The Bouy has access to an AdHoc network linked to all Buoys, and an AM/FM transmitter and Reliever. The program consists of three main parts start-up,
                     message handling and error handling.
                     <br>
                     <br>
-                    The system we devised would always scan for an AM and FM frequency which is open on start-up, the frequency is chosen at random, to minimize the chances
-                    of nearby Buoys interfering with each other, the logic for this is that when a frequency is selected the receiver is used to check for interference. In
-                    an area where there is a dense population of Buoys if signals were selected sequentially from 535 kHz to 1700 kHz (AM), then each starting buoy would
-                    spend important time checking all the frequencies until it finds an open one, the randomization on startup aims to minimize this issue.
+                    The system we devised would always scan for an AM and FM frequency which is open on start-up, the frequency is chosen at random, to minimize the chances of nearby Buoys interfering with each other, the logic for this is that when a frequency is selected the receiver is used to check for interference. In an area where there is a dense population of Buoys if signals were selected sequentially from 535 kHz to 1700 kHz (AM), then each starting buoy would spend important time checking all the frequencies until it finds an open one, the randomization on startup aims to minimize this issue.
                     <br>
                     <br>
                     Messages to be broadcast are received by the system from the weather module and ocean conditions module, the system would queue up weather
-                    data and ocean conditions then would alternate its transmissions of the two pieces of data, the queue used for this prioritizes messages by time and dequeue any old information
-                    if more current data is available. The queue overrides any transmissions if it receives an extreme warning from either the weather module or ocean conditions
-                    module. The information from the queue is sent to another module to create a human friendly message
-                    and broadcast it. The module converts the input information into simple speech using a series of filters and bins (implementation not in scope of
-                    competition), once a message was converted to speech it was broadcast on both the AM and FM bands (The broadcasting of the messages was out of scope of
-                    the competition).
+                    data and ocean conditions than would alternate its transmissions of the two pieces of data, the queue used for this prioritizes messages by time and dequeue any old information
+                    if more current data is available. The queue overrides any transmissions if it receives an extreme warning from either the weather module or ocean conditions module. The information from the queue is sent to another module to create a human-friendly message and broadcast it. The module converts the input information into simple speech using a series of filters and bins (implementation not in the scope of competition), once a message was converted to speech it was broadcast on both the AM and FM bands (The broadcasting of the messages was out of the scope of the competition).
                     <br>
                     <br>
-                    The system will be placed in open water where it must put up with horrendous conditions the system for this reason must be able to notify if it is non-functional
-                    such that it may be fixed. On startup and periodically on a schedule the system is checked for functionality by broadcasting a signal on it's AM and FM bands and
-                    then using the receiver to check if the signal received matched the expected output signal. If an issue arises the Buoy uses the AdHoc network to send a message
-                    across the network to notify a repair is required.
+                    The system will be placed in open water where it must put up with horrendous conditions, the system, for this reason, must be able to notice if it is non-functional
+                    such that it may be fixed. On startup and periodically on a schedule the system is checked for functionality by broadcasting a signal on it's AM and FM bands and then using the receiver to check if the signal received matched the expected output signal. If an issue arises the Buoy uses the AdHoc network to send a message across the network to notify a repair is required.
                     <br>
                     <br>
                     This was a server/client implementation and was implemented through C++.
@@ -399,8 +384,7 @@
                     <br>
                     <br>
                     The goal for the semester was to advance our documentation, requirements and testing skills to do this the task was to find an existing project and improve it's documentation.
-                    A decision was made to try and port a game over from Java to the web such that it would not have to be downloaded and ran locally, to try and show that with the power of modern computers
-                    simple games can be developed for the browser, allowing for ease of access to anyone. Over the course of a semester the requirements and interface spec was created.
+                    A decision was made to try and port a game over from Java to the web such that it would not have to be downloaded and ran locally, to try and show that with the power of modern computers simple games can be developed for the browser, allowing for ease of access to anyone. Over the course of a semester, the requirements and interface spec were created.
                     <br>
                     <br>
                     The implementation occurred in four main phases:
@@ -582,14 +566,10 @@
                     <span>Course Long Project</span>
                     <br>
                     <br>
-                    This application's intended purpose is to identify weather stations which are not required and may be relocated. The application does this by first placing all stations in a un-directed edge
-                    weighted graph, After this the graph is converted into a minimum spanning tree while only keeping edges between stations who's weather data is accurate to one another's within the user's specified
-                    tolerances. At this point the nodes with the greatest number of edges is removed, which leaves one of three node types. The first are stations which cannot be used to predict other stations, the seconds
-                    stations used to predict stations, and the third stations predicted. At this point the program then checks if the new layout is still accurate within user tolerances and to do this the program checks
-                    the layout over two additional years. At this point all data processing has been completed where it is put into a JSON file and is displayed for the user.
+                    This application's intended purpose is to identify weather stations which are not required and may be relocated. The application does this by first placing all stations in a un-directed edge-weighted graph, After this, the graph is converted into a minimum spanning tree while only keeping edges between stations who's weather data is accurate to one another's within the user's specified tolerances. At this point, the nodes with the greatest number of edges are removed, which leaves one of three node types. The first are stations which cannot be used to predict other stations, the second are stations used to predict other stations, and the third are predicted stations. At this point, the program then checks if the new layout is still accurate within user tolerances and to do this the program checks the layout over two additional years. At this point, all data processing has been completed where it is put into a JSON file and is displayed for the user.
                     <br>
                     <br>
-                    On the technical side, the program uses a Model View Controller design. The Model being the back-end which is built in ruby and harnesses an SQLite3 database for the data storage and manipulation. The Controller is the server which uses the Sinatra API to effectively connect the Front-end to the Back-end. The View is written in HTML/CSS/Java-Script, and uses an electron wrapper to allow it to act as a standalone application.
+                    On the technical side, the program uses a Model View Controller design. The Model being the back-end which is built in Ruby and harnesses an SQLite3 database for the data storage and manipulation. The Controller is the server which uses the Sinatra API to effectively connect the Front-end to the Back-end. The View is written in HTML/CSS/Java-Script and uses an electron wrapper to allow it to act as a standalone application.
                 </div>
 
             </div>
@@ -819,7 +799,7 @@
                             Personalized: The app allowed users to select there preferred colour scheme
                         </li>
                         <li>
-                            Input: The user could select to use touch input or the phones gyroscope
+                            Input: The user could select to use touch input or the phone's gyroscope
                         </li>
 
                     </ul>
