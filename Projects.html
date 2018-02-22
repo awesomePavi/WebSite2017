@@ -7,976 +7,976 @@
         location.href = 'https:' + window.location.href.substring(window.location.protocol.length) +'?';
     }
   </script>
-	<link rel="icon" type="image/png" href="./Icons/favico256.png">
-	<title>Portfolio</title>
-	<meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="./Icons/favico256.png">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" type="text/css" href="./CSS/General.css">
-	<link rel="stylesheet" type="text/css" href="./CSS/Skillbar.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/General.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Skillbar.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="./Javascript/indexSizing.js"></script>
-	<script src="./Javascript/Skillbar.js"></script>
-	<script src="./Javascript/downloads.js"></script>
-	<script>
-		function completePage() {
-			fixDivs();
-			document.getElementsByTagName("BODY")[0].className = 'bgMain';
-		}
-	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./Javascript/indexSizing.js"></script>
+    <script src="./Javascript/Skillbar.js"></script>
+    <script src="./Javascript/downloads.js"></script>
+    <script>
+        function completePage() {
+            fixDivs();
+            document.getElementsByTagName("BODY")[0].className = 'bgMain';
+        }
+    </script>
 </head>
 
 <body onload="completePage();">
 
-	<div class="topHeader">
-		<div id="headerLeft">
-			<img class="imageDB headerImage" src="./Img/Profile.png">
-			<br>
-		</div>
-
-		<div id="headerRight">
-			<div id="content" class="gradBlackTrans" style="padding-left: 10px; display: inline-block">
-				<h2>My Name Is</h2>
-				<h1>Pavithran Pathmarajah</h1>
-				<h2>Aspiring Software Engineer</h2>
-				<hr>
-				<b>pathmap@mcmaster.ca</b>
-				<br>
-				<b>(905) 599 7284</b>
-
-			</div>
-		</div>
-	</div>
-
-	<div class="spacer"></div>
-
-
-	<div class="fullWidth">
-		<div class="col13 focus">
-			<h1>PROJECTS</h1>
-		</div>
-		<div class="col13 notFocus" onclick="goToIndex()">
-			<h1>ABOUT ME</h1>
-		</div>
-		<div class="col13 notFocus" onclick="goToGit()">
-			<h1>GITHUB</h1>
-		</div>
-	</div>
-
-	<div class="spacer"></div>
-
-	<div class="fullWidth">
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left ">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/chat1.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Chat Room</b></span>
-					<span style="float: right;"> <b>Created January 2017</b></span>
-					<br>
-					<hr>
-					<span>First Project Using WebSockets</span>
-					<br>
-					<br>
-					The purpose of this website was to use real-time web and harness web-sockets in a project which, can reflect a product in the real world.
-					<br>
-					<br>
-					The site prompts for a username to be entered upon loading. The server then sends back any chat logs so the new user can view the history of the chat. Each user is given a unique colour in the chat window. The chat currently only supports text-based chat, but on mobile you are able to include emoticons. The message field is located at the top of the page, to deal with issues with software keyboards on mobile
-					<br>
-					<br>
-					What's Next:
-					<ul>
-					<li>
-					Private Messaging
-					</li>
-					<li>
-					Forcing Unique Usernames
-					</li>
-					<li>
-					Functional Disconnect system
-					</li>
-					<li>
-					Move messaging to bottom of page
-					</li>
-					</ul>
-
-					This was a server-client implementation. Client-side HTML with Javascript, JQuery and socket.io. Server-side Node.js using express and socket.io; hosted on Microsoft Azure.
-				</div>
-
-			</div>
-			<div class="Right display ">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-					<tr>
-						<td>
-							<a href="http://chat.pavipath.com" target="_blank">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/web.png"></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://github.com/awesomePavi/chatRoom" target="_blank">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/git.png"></td>
-					</tr>
-
-				</table>
-			</div>
-		</div>
-
-	<div class="spacer"></div>
-
-	<div class="fullWidth">
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left ">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/ASConverter.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Apple Music Spotify ~ Playlist Converter</b></span>
-					<span style="float: right;"> <b>Created December 2016</b></span>
-					<br>
-					<hr>
-					<span>No suitable products on market</span>
-					<br>
-					<br>
-					The purpose of this website is simple to aid in the conversion of AppleMusic and Spotify playlists across platforms.The reason for the development of this website
-					occured in two steps. First I was a long time spotify user who switched to apple music, so I made a system to convert Spotify Playlists to Apple Music, a little
-					while later I switched back to Spotify and then needed to convert an Apple Music Playlist to a Spotify Playlist. I was unable to find any free service which did
-					not require an IOS device or were free (which did not use security vulnerabilities which were patched as of ITunes version 12.5.4). to this end I decided it
-					would be in my best interest to create my own system to do this.
-					<br>
-					<br>
-					<h3>Apple Music To Spotify</h3>
-					The system required a public share link for an ITunes playlist to be provided. Using the apple music toolbox the playlist can be converted to a nice widget. From this point
-					the system converted the playlist in 5 steps:
-					<ul>
-						<li> Use the Spotify API to gain access to Create and Search API</li>
-						<li> Parse the Apple Music Widget, to get Song Titles and Artists</li>
-						<li> Check if a spotify playlist has the same name, if so prompt the user</li>
-						<li> Use the Spotify search API to find the songs then add them to the created palylist</li>
-						<li> Display the new playlist as a widget and let the user know what songs could not be added automatically</li>
-					</ul>
-					The biggest issue that I am currently having with this implemention is the search accruacy, for a portion of the songs are being picked up as an Accapela cover,
-					or another variant of the orignal song.
-					<br>
-					<br>
-					<h3>Spotify To Apple Music</h3>
-					The idea I had was simple, to re-create the ITunes playlist structure I did this by making a simple apple music playlist and exporting it from ITunes. I reverse
-					engineered the playlist style and discovered what information I would need to successfully mimic a playlist. I went about building this playlist builder in 4 steps:
-					<ul>
-						<li> Use the Spotify API to gain access to Spotify playlist and track info</li>
-						<li> Build a user interface to select a playlist to convert</li>
-						<li> Create a downloadable text file to import into ITunes, through HTML and JavaScript</li>
-						<li> Use the ITunes search API, and search songs with the track name and artist provided by Spotify. Assuming the first result returned was correct</li>
-					</ul>
-					The biggest issue I ran into occurred at the 4th step, for Apple Music requires composer information in the playlist file in-order to successfully include the
-					track. This is a piece of Data that I was unable to get from the ITunes API. I then explored different options trying to play with AppleScripts and Apple Music
-					API to make a desktop based system but the API for Apple Music in its current capacity is for IOS.
-					<br>
-					<Br>
-					Due to these setbacks the website currently creates Spotify widgets with its Apple Music counterpart, allowing users to find their tracks in Apple Music but until further
-					notice the automated transfer of a playlist is unlikely to occur.
-					<br>
-					<br>
-					This was a simple web-based implementation made using, HTML, JavaScript with the Spotify API, ITunes API and the Apple Music Toolbox.
-				</div>
-
-			</div>
-			<div class="Right display ">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-					<tr>
-						<td>
-							<a href="http://www.ASplaylist.tk" target="_blank">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/web.png"></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://github.com/awesomePavi/SpotifyToApple" target="_blank">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/git.png"></td>
-					</tr>
-
-				</table>
-			</div>
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left ">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/YHack.png">
-				<div style="padding-left: 5%;  float: right">
-					<span style="float: left;"> <b>Distributed Computing</b></span>
-					<span style="float: right;"> <b>Created November 2016</b></span>
-					<br>
-					<hr>
-					<span>Yhack 2016</span>
-					<br>
-					<br>
-					The idea behind the program was a test run for a scalable system, building off the idea of how much computing power is wasted by computers idling. As a proof of
-					concept a simple data set of meteorite findings across the globe over 100 years was used, where the system would use distributed computing to calculate the likelihood of
-					another meteorite hitting a particular location. The system
-					that was built used servers provided by <a target="_blank" href="https://www.1and1.com">1&1</a>, to handle, distribute and merge data. The system would break the
-					data up into sector's based on longitude and latitude server side; then when a connection is made it sends a random sector to the connected computer to be
-					analyzed (the sector is chosen at random to try and compensate for concurrency issues that may arise from sequential sector analysis). The user's computer would
-					receive the data and would process the data with code embedded into the page, once the analysis is completed it is sent back to the server, which flags the sector
-					as complete. Then the server merges the analyzed sector to the completed data set, which contains meteor distribution density across the globe. Each time a user
-					computer completes another sector everyone which goes to the site can see the output from completed sectors as a world map with different shaded sectors on it.
-					<br>
-					<br>
-					The system had two sides to it a client side and the public side. The client side included an interface to upload data to the server and specify parameters
-					for the analysis; the public side consisted of a front facing interface to explain to users what will be happening and where their contribution is going,
-					Then a graphic is used to show the progress of the data being crunched by the browser followed by a world map filled with current density information from,
-					already crunched data.
-					<br>
-					<br>
-					This was a server/client implementation and was the first time I have worked with a real server using PHP, JavaScript, HTML, CSS to build the entire project.
-				</div>
-
-			</div>
-			<div class="Right display ">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-				<tr>
-				<td>
-					<a href="https://github.com/awesomePavi/Yhack2016" target="_blank">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				</table>
-			</div>
-		</div>
-
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/MEC.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Broadcast system</b></span>
-					<span style="float: right;"> <b>Created October 2016</b></span>
-					<br>
-					<hr>
-					<span>McMaster Programming Competition</span>
-					<br>
-					<br>
-					For the competition, we choose to implement an AM/FM Radio broadcasting system to distribute crucial weather information to nearby refugees attempting
-					to navigate open waters. The system was built in C++ for we believed that it would require the least amount of resources to operate, as it does not
-					require hardware to run a JVM in order to run, but compiles directly into machine code. The system needed to be robust and had to account for
-					<ul>
-						<li>
-							Sudden power outages.
-						</li>
-						<li>
-							Interference from other buoys
-						</li>
-					</ul>
-					The Bouy has access to a AdHoc network linked to all Buoys, and an AM/FM transmitter and Reliever. The program consists of three main parts start-up,
-					message handling and error handling.
-					<br>
-					<br>
-					The system we devised would always scan for an AM and FM frequency which is open on start-up, the frequency is chosen at random, to minimize the chances
-					of nearby Buoys interfering with each other, the logic for this is that when a frequency is selected the receiver is used to check for interference. In
-					an area where there is a dense population of Buoys if signals were selected sequentially from 535 kHz to 1700 kHz (AM), then each starting buoy would
-					spend important time checking all the frequencies until it finds an open one, the randomization on startup aims to minimize this issue.
-					<br>
-					<br>
-					Messages to be broadcast are received by the system from the weather module and ocean conditions module, the system would queue up weather
-					data and ocean conditions then would alternate its transmissions of the two pieces of data, the queue used for this prioritizes messages by time and dequeue any old information
-					if more current data is available. The queue overrides any transmissions if it receives an extreme warning from either the weather module or ocean conditions
-					module. The information from the queue is sent to another module to create a human friendly message
-					and broadcast it. The module converts the input information into simple speech using a series of filters and bins (implementation not in scope of
-					competition), once a message was converted to speech it was broadcast on both the AM and FM bands (The broadcasting of the messages was out of scope of
-					the competition).
-					<br>
-					<br>
-					The system will be placed in open water where it must put up with horrendous conditions the system for this reason must be able to notify if it is non-functional
-					such that it may be fixed. On startup and periodically on a schedule the system is checked for functionality by broadcasting a signal on it's AM and FM bands and
-					then using the receiver to check if the signal received matched the expected output signal. If an issue arises the Buoy uses the AdHoc network to send a message
-					across the network to notify a repair is required.
-					<br>
-					<br>
-					This was a server/client implementation and was implemented through C++.
-
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-			<table style="margin: 0px auto; padding: 0; width: 100%">
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://github.com/awesomePavi/MECProgramming_2016">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				</table>
-				<div class="spacer"></div>
-				<h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
-				<table style=" margin: 0px auto; padding: 0: width: auto; float: center">
-
-					<tr>
-						<td>
-							<a target="_blank" href="https://ca.linkedin.com/in/simon-ly-b09a73b6">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Simon Ly</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/link.png"></td>
-					</tr>
-
-					<tr>
-						<td>
-							<a target="_blank" href="https://www.linkedin.com/in/tarunjain4">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Tarun Jain</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/link.png"></td>
-					</tr>
-
-					<tr>
-						<td>
-							<a target="_blank" href="https://ca.linkedin.com/in/eric-kamada-5b02a3127">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Eric Kamada</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/link.png"></td>
-					</tr>
-
-
-
-				</table>
-				</div>
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left ">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/JSTanks.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>JS Tanks</b></span>
-					<span style="float: right;"> <b>Created September 2016</b></span>
-					<br>
-					<hr>
-					<span>Term Project</span>
-					<br>
-					<br>
-					The goal for the semester was to advance our documentation, requirements and testing skills to do this the task was to find an existing project and improve it's documentation.
-					A decision was made to try and port a game over from Java to the web such that it would not have to be downloaded and ran locally, to try and show that with the power of modern computers
-					simple games can be developed for the browser, allowing for ease of access to anyone. Over the course of a semester the requirements and interface spec was created.
-					<br>
-					<br>
-					The implementation occurred in four main phases:
-					<ul>
-						<li> A simple framework was built to allow the HTML and JavaScript to interact with basic movement included and some simple graphics.
-							(<a href="https://jstank.pavipath.com/HTML/Proof-Of-Concept.html" target="_blank">Here</a>)</li>
-						<li>
-							Core game features were added including tile entities, maps, AI and Difficulty  (<a href="https://jstank.pavipath.com/HTML/JSTanks.html" target="_blank">Here</a>)
-						</li>
-						<li>
-							Homepage, Instructions and bug fixes were added, to a finalized revision  (<a href="https://jstank.pavipath.com/HomePage/homePage.html" target="_blank">Here</a>)
-						</li>
-						<li>
-							An automated testing script was made to test the games features, to save time over conventional manual testing (<a href="https://jstank.pavipath.com/Testing/Test.html" target="_blank">Here</a>)
-						</li>
-					</ul>
-					<br>
-					<br>
-					This was a Model View Controller implementation and was the port of a simple Java game enhanced and rebuilt in HTML5, JavaScript and CSS.
-				</div>
-
-			</div>
-			<div class="Right display ">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-					<tr>
-						<td>
-							<a href="http://jstank.pavipath.com" target="_blank">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/web.png"></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://github.com/awesomePavi/JSTanks-3XA3" target="_blank">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/git.png"></td>
-					</tr>
-
-				</table>
-			</div>
-		</div>
-
-
-		<div class="spacer"></div>
-
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/Calc.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>C++ Calculator</b></span>
-					<span style="float: right;"> <b>Created April 2016</b></span>
-					<br>
-					<hr>
-					<span>Project Building a Calculator in C++</span>
-					<br>
-					<br>
-					This project was made during an intro to Java course where we dabbled in C++. The system that we implemented, was able to follow
-					BEDMAS accurately and compute the result to mathematical expressions. The systems worked by pushing an expression onto a stack and
-					using a First in Last Out system would identify sections by its brackets and then do all calculations through BEDMAS order, swapping
-					values as the program ran.
-					<br>
-					<br>
-					This was a Pipe and Filter Architecture and was implemented with C++
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://github.com/awesomePavi/CPP-Expression-Calculator">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				</table>
-			</div>
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/SixMenMorris.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Six Men Morris</b></span>
-					<span style="float: right;"> <b>Created March 2016</b></span>
-					<br>
-					<hr>
-					<span>Six Men Morris</span>
-					<br>
-					<br>
-					This program implements the Six Men Morris variant of the game Nine Men Morris the game includes:
-					<ul>
-						<li>
-							Game Load/Save functionality
-						</li>
-						<li>
-							Ability to set-up a game board from memory and play from their
-						</li>
-						<li>
-							Simple AI functionality for user vs. computer
-						</li>
-
-					</ul>
-					<br>
-					This was a Model-View-Controller Architecture and was implemented with Java
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://github.com/awesomePavi/Six-Men-Morris_2AA4">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				</table>
-				<div class="spacer"></div>
-				<h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
-				<table style=" margin: 0px auto; padding: 0: width: auto; float: center">
-
-					<tr>
-						<td>
-							<a target="_blank" href="https://ca.linkedin.com/in/shawnziyiking">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Shawn Jin</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/link.png"></td>
-					</tr>
-
-					<tr>
-						<td>
-							<a target="_blank" href="https://github.com/danceFLY">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Emily Ashworth</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/git.png"></td>
-					</tr>
-
-				</table>
-			</div>
-		</div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/Weather.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Weather Station Analyzer</b></span>
-					<span style="float: right;"> <b>Created February 2016</b></span>
-					<br>
-					<hr>
-					<span>Course Long Project</span>
-					<br>
-					<br>
-					This application's intended purpose is to identify weather stations which are not required and may be relocated. The application does this by first placing all stations in a un-directed edge
-					weighted graph, After this the graph is converted into a minimum spanning tree while only keeping edges between stations who's weather data is accurate to one another's within the user's specified
-					tolerances. At this point the nodes with the greatest number of edges is removed, which leaves one of three node types. The first are stations which cannot be used to predict other stations, the seconds
-					stations used to predict stations, and the third stations predicted. At this point the program then checks if the new layout is still accurate within user tolerances and to do this the program checks
-					the layout over two additional years. At this point all data processing has been completed where it is put into a JSON file and is displayed for the user.
-					<br>
-					<br>
-					On the technical side, the program uses a Model View Controller design. The Model being the back-end which is built in ruby and harnesses an SQLite3 database for the data storage and manipulation. The Controller is the server which uses the Sinatra API to effectively connect the Front-end to the Back-end. The View is written in HTML/CSS/Java-Script, and uses an electron wrapper to allow it to act as a standalone application.
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-
-					<tr>
-						<td>
-							<a target="_blank" href="https://github.com/awesomePavi/Weather-Stn-Anly_2XB3">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/git.png"></td>
-					</tr>
-
-					<tr>
-						<td>
-							<a target="_blank" href="https://drive.google.com/file/d/0Bw2B-7OLfsDAY1ZyeThrNmpmZFk/view">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on Drive</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/drive.png"></td>
-					</tr>
-
-				</table>
-
-				<div class="spacer">
-					<h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
-					<table style=" margin: 0px auto; padding: 0: width: auto; float: center">
-
-						<tr>
-							<td>
-								<a target="_blank" href="http://kunalshah.ca">
-									<h3 class="scaleTo" style="padding: 0; margin: 0;">Kunal Shah</h3>
-								</a>
-							</td>
-							<td><img class="scaled" src="./Icons/link.png"></td>
-						</tr>
-
-						<tr>
-							<td>
-								<a target="_blank" href="https://ca.linkedin.com/in/pjmcoliveira">
-									<h3 class="scaleTo" style="padding: 0; margin: 0;">Pedro Oliveria</h3>
-								</a>
-							</td>
-							<td><img class="scaled" src="./Icons/link.png"></td>
-						</tr>
-
-						<tr>
-							<td>
-								<a target="_blank" href="https://ca.linkedin.com/in/pareek-ravi-272134113">
-									<h3 class="scaleTo" style="padding: 0; margin: 0;">Pareek Ravi</h3>
-								</a>
-							</td>
-							<td><img class="scaled" src="./Icons/link.png"></td>
-						</tr>
-
-					</table>
-
-
-
-				</div>
-			</div>
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/Website.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Personal WebSite 2016</b></span>
-					<span style="float: right;"> <b>Created January 2016</b></span>
-					<br>
-					<hr>
-					<span>Built to showcase my work</span>
-					<br>
-					<br>
-					This is my original personal website. Hosted via GitHub and with a domain name provided by name cheap. I created this website because I wanted a way to showcase my CV easily for
-					everyone to see, and so I can keep track of what I've done. I dabbled with WordPress, which boasts an intuitive interface, but I found it cumbersome and was unable to find the
-					layout that I desired. At this point I decided since I knew enough about HTML and CSS, from when I played with it in high school, I would construct my own site from scratch. I took
-					out my pencil and paper drew out a design, chose a colour palette, and got to work.
-					<br>
-					<br>
-					This was implemented through HTML, CSS and Javascript
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-					<tr>
-						<td>
-							<a href="http://www.pavipath.com/WebSite2016/" target="_blank">
-								<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
-							</a>
-						</td>
-						<td><img class="scaled" src="./Icons/web.png"></td>
-					</tr>
-				<tr>
-				<td>
-					<a href="https://github.com/awesomePavi/WebSite2016"  target="_blank">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				</table>
-			</div>
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/WelclomeToCanada.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Welcome To Canada</b></span>
-					<span style="float: right;"> <b>Created November 2015</b></span>
-					<br>
-					<hr>
-					<span>Hack Western 2 - Project to help Immigrants</span>
-					<br>
-					<br>
-					This application was made for android by Mike Hong, Jack Li, Matthew Ngai and myself. This application is targeted to those who are new to the country and do not know much
-					about the culture and customs and is designed to make the transition to Canadian life simpler.
-					<br>
-					Some key features the application offers include:
-					<ul>
-						<li>
-							Push Notification for national Holidays
-						</li>
-						<li>
-							Translations of Commonly used English words into 9 different Languages
-						</li>
-						<li>
-							Currency Exchange Rates
-						</li>
-
-					</ul>
-					<br>
-					This was a Batch Sequential Architecture and was implemented through Java and uses the wolfram API
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://github.com/awesomePavi/About_Canada">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				</table>
-				<div class="spacer"></div>
-			<h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
-			<table style=" margin: 0px auto; padding: 0: width: auto; float: center">
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://github.com/88JumpingJacks">
-						<h3 class="scaleTo" style="padding: 0; margin: 0;">Jack Li</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://github.com/mykongee">
-						<h3 class="scaleTo" style="padding: 0; margin: 0;">Mike Hong</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://github.com/matthewngai">
-						<h3 class="scaleTo" style="padding: 0; margin: 0;">Matthew Ngai</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-			</table>
-			</div>
-		</div>
-
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/BlockEvader.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Block Evader</b></span>
-					<span style="float: right;"> <b>Created March 2014</b></span>
-					<br>
-					<hr>
-					<span >First Android App</span>
-					<br>
-					<br>
-					This was truly my first android app, I worked on intensively for a few days and then quit on android (until a Hackathon in 2015). I made this application because
-					I wanted a game that was simple and fun to play while waiting at the bus stop. The game is straight forward all you must do is dodge the falling blocks. The game itself is
-					very inefficient but the idea was simple enough, on first load it would create the images based on the phone’s resolution and size, then the game play would be randomly spaced and placed falling blocks.
-					<br>
-					The game had features that I believe more applications should have:
-					<ul>
-						<li>
-							Personalized: The app allowed users to select there preferred colour scheme
-						</li>
-						<li>
-							Input: The user could select to use touch input or the phones gyroscope
-						</li>
-
-					</ul>
-					NOTE: This application was made on a Motorola RAZR (not the v3), and is quite buggy on other phones
-					<br>
-					<br>
-					This used the Batch Sequential Architecture and was implemented with Java.
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-			<table style="margin: 0px auto; padding: 0; width: 100%">
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://www.dropbox.com/s/qdap1mhb4poaj2m/BlockEvader1.3.apk?dl=0">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on Dropbox</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/drop.png"></td>
-				</tr>
-
-				</table>
-			</div>
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/TetraverseHome.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Tetraverse</b></span>
-					<span style="float: right;"> <b>Created Januaray 2014</b></span>
-					<br>
-					<hr>
-					<span >Summative Assignment</span>
-					<br>
-					<br>
-					This was the first large program that I worked on in a team. Over 3 months we made a custom rendition of the classic game Tetris. We designed and
-					implemented a 3D-Render engine from scratch and implemented our rendition on the classic game Tetris.
-					<br>
-					The features that set this game apart from the rest were:
-					<ul>
-						<li>
-							New Blocks: 1x1, 2x1, 3x1, miniature L, Bomb (Blew up blocks)
-						</li>
-						<li>
-							Screen Rotation: Rotating the game and physics 90, 180 and 270 degrees randomly
-						</li>
-						<li>
-							Custom Game Mode: You can include or exclude any features
-						</li>
-						<li>
-							A variety of 3D-Depths
-						</li>
-					</ul>
-					<br>
-					This used the Model View Controller Architecture and was implemented with Java.
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://github.com/awesomePavi/Tetraverse">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				</table>
-				<div class="spacer"></div>
-			<h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
-			<table style=" margin: 0px auto; padding: 0: width: auto; float: center">
-
-				<!--___WAIT FOR CONTACT, FOR PERMISSION & LINK INFO__-->
-				<!--<tr>-->
-				<!--<td>-->
-						<!--<h3  style="padding: 0; margin: 0;">Christopher Wilson</h3>-->
-					<!---->
-				<!--</td>-->
-				<!--</tr>-->
-
-				<!--<tr>-->
-				<!--<td>-->
-						<!--<h3  style="padding: 0; margin: 0;">Stephen Webb</h3>-->
-					<!---->
-				<!--</td>-->
-				<!--</tr>-->
-
-				<tr>
-				<td>
-					<a target="_blank" href="https://ca.linkedin.com/in/shirley-xiao-b72335a7">
-						<h3 class="scaleTo" style="padding: 0; margin: 0;">Shirley Xiao</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/link.png"></td>
-				</tr>
-
-			</table>
-			</div>
-
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="projects">
-			<div class="Left">
-				<hr style="clear: both">
-				<br>
-
-				<img style=" float: left;" src="./Img/Snake.png">
-				<div style="padding-left: 5%; float: right">
-					<span style="float: left;"> <b>Snake</b></span>
-					<span style="float: right;"> <b>Created September 2010</b></span>
-					<br>
-					<hr>
-					<span >Grade 9 - Intro to Programming</span>
-					<br>
-					<br>
-					This was the first program that I made with graphics. In high school I was not able to appreciate the text based programs we were working on
-					in class because it seemed too simple. During class I would typically finish my work early and use the reference guide to find new things. I
-					taught myself arrays, graphics, and loops. Than made this snake game to show my work, this very high level language is what made me finally decide to become a Software Engineer.
-					<br>
-					<br>
-					This used the Batch Sequential and was implemented with Turing.
-				</div>
-
-			</div>
-			<div class="Right display">
-				<hr style="clear: both">
-				<table style="margin: 0px auto; padding: 0; width: 100%">
-
-				<tr>
-				<td>
-					<a href="https://github.com/awesomePavi/Weather-Stn-Anly_2XB3"  target="_blank">
-					<h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
-					</a>
-				</td>
-				<td><img class="scaled" src="./Icons/git.png"></td>
-				</tr>
-
-				</table>
-			</div>
-		</div>
-	</div>
-
-	<div class="spacer"></div>
+    <div class="topHeader">
+        <div id="headerLeft">
+            <img class="imageDB headerImage" src="./Img/Profile.png">
+            <br>
+        </div>
+
+        <div id="headerRight">
+            <div id="content" class="gradBlackTrans" style="padding-left: 10px; display: inline-block">
+                <h2>My Name Is</h2>
+                <h1>Pavithran Pathmarajah</h1>
+                <h2>Aspiring Software Engineer</h2>
+                <hr>
+                <b>pathmap@mcmaster.ca</b>
+                <br>
+                <b>(905) 599 7284</b>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+
+    <div class="fullWidth">
+        <div class="col13 focus">
+            <h1>PROJECTS</h1>
+        </div>
+        <div class="col13 notFocus" onclick="goToIndex()">
+            <h1>ABOUT ME</h1>
+        </div>
+        <div class="col13 notFocus" onclick="goToGit()">
+            <h1>GITHUB</h1>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="fullWidth">
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left ">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/chat1.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Chat Room</b></span>
+                    <span style="float: right;"> <b>Created January 2017</b></span>
+                    <br>
+                    <hr>
+                    <span>First Project Using WebSockets</span>
+                    <br>
+                    <br>
+                    The purpose of this website was to use real-time web and harness web-sockets in a project which, can reflect a product in the real world.
+                    <br>
+                    <br>
+                    The site prompts for a username to be entered upon loading. The server then sends back any chat logs so the new user can view the history of the chat. Each user is given a unique colour in the chat window. The chat currently only supports text-based chat, but on mobile you are able to include emoticons. The message field is located at the top of the page, to deal with issues with software keyboards on mobile
+                    <br>
+                    <br>
+                    What's Next:
+                    <ul>
+                    <li>
+                    Private Messaging
+                    </li>
+                    <li>
+                    Forcing Unique Usernames
+                    </li>
+                    <li>
+                    Functional Disconnect system
+                    </li>
+                    <li>
+                    Move messaging to bottom of page
+                    </li>
+                    </ul>
+
+                    This was a server-client implementation. Client-side HTML with Javascript, JQuery and socket.io. Server-side Node.js using express and socket.io; hosted on Microsoft Azure.
+                </div>
+
+            </div>
+            <div class="Right display ">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+                    <tr>
+                        <td>
+                            <a href="http://chat.pavipath.com" target="_blank">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/web.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://github.com/awesomePavi/chatRoom" target="_blank">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/git.png"></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    <div class="spacer"></div>
+
+    <div class="fullWidth">
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left ">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/ASConverter.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Apple Music Spotify ~ Playlist Converter</b></span>
+                    <span style="float: right;"> <b>Created December 2016</b></span>
+                    <br>
+                    <hr>
+                    <span>No suitable products on market</span>
+                    <br>
+                    <br>
+                    The purpose of this website is simple to aid in the conversion of AppleMusic and Spotify playlists across platforms.The reason for the development of this website
+                    occured in two steps. First I was a long time spotify user who switched to apple music, so I made a system to convert Spotify Playlists to Apple Music, a little
+                    while later I switched back to Spotify and then needed to convert an Apple Music Playlist to a Spotify Playlist. I was unable to find any free service which did
+                    not require an IOS device or were free (which did not use security vulnerabilities which were patched as of ITunes version 12.5.4). to this end I decided it
+                    would be in my best interest to create my own system to do this.
+                    <br>
+                    <br>
+                    <h3>Apple Music To Spotify</h3>
+                    The system required a public share link for an ITunes playlist to be provided. Using the apple music toolbox the playlist can be converted to a nice widget. From this point
+                    the system converted the playlist in 5 steps:
+                    <ul>
+                        <li> Use the Spotify API to gain access to Create and Search API</li>
+                        <li> Parse the Apple Music Widget, to get Song Titles and Artists</li>
+                        <li> Check if a spotify playlist has the same name, if so prompt the user</li>
+                        <li> Use the Spotify search API to find the songs then add them to the created palylist</li>
+                        <li> Display the new playlist as a widget and let the user know what songs could not be added automatically</li>
+                    </ul>
+                    The biggest issue that I am currently having with this implemention is the search accruacy, for a portion of the songs are being picked up as an Accapela cover,
+                    or another variant of the orignal song.
+                    <br>
+                    <br>
+                    <h3>Spotify To Apple Music</h3>
+                    The idea I had was simple, to re-create the ITunes playlist structure I did this by making a simple apple music playlist and exporting it from ITunes. I reverse
+                    engineered the playlist style and discovered what information I would need to successfully mimic a playlist. I went about building this playlist builder in 4 steps:
+                    <ul>
+                        <li> Use the Spotify API to gain access to Spotify playlist and track info</li>
+                        <li> Build a user interface to select a playlist to convert</li>
+                        <li> Create a downloadable text file to import into ITunes, through HTML and JavaScript</li>
+                        <li> Use the ITunes search API, and search songs with the track name and artist provided by Spotify. Assuming the first result returned was correct</li>
+                    </ul>
+                    The biggest issue I ran into occurred at the 4th step, for Apple Music requires composer information in the playlist file in-order to successfully include the
+                    track. This is a piece of Data that I was unable to get from the ITunes API. I then explored different options trying to play with AppleScripts and Apple Music
+                    API to make a desktop based system but the API for Apple Music in its current capacity is for IOS.
+                    <br>
+                    <Br>
+                    Due to these setbacks the website currently creates Spotify widgets with its Apple Music counterpart, allowing users to find their tracks in Apple Music but until further
+                    notice the automated transfer of a playlist is unlikely to occur.
+                    <br>
+                    <br>
+                    This was a simple web-based implementation made using, HTML, JavaScript with the Spotify API, ITunes API and the Apple Music Toolbox.
+                </div>
+
+            </div>
+            <div class="Right display ">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+                    <tr>
+                        <td>
+                            <a href="http://www.ASplaylist.tk" target="_blank">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/web.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://github.com/awesomePavi/SpotifyToApple" target="_blank">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/git.png"></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left ">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/YHack.png">
+                <div style="padding-left: 5%;  float: right">
+                    <span style="float: left;"> <b>Distributed Computing</b></span>
+                    <span style="float: right;"> <b>Created November 2016</b></span>
+                    <br>
+                    <hr>
+                    <span>Yhack 2016</span>
+                    <br>
+                    <br>
+                    The idea behind the program was a test run for a scalable system, building off the idea of how much computing power is wasted by computers idling. As a proof of
+                    concept a simple data set of meteorite findings across the globe over 100 years was used, where the system would use distributed computing to calculate the likelihood of
+                    another meteorite hitting a particular location. The system
+                    that was built used servers provided by <a target="_blank" href="https://www.1and1.com">1&1</a>, to handle, distribute and merge data. The system would break the
+                    data up into sector's based on longitude and latitude server side; then when a connection is made it sends a random sector to the connected computer to be
+                    analyzed (the sector is chosen at random to try and compensate for concurrency issues that may arise from sequential sector analysis). The user's computer would
+                    receive the data and would process the data with code embedded into the page, once the analysis is completed it is sent back to the server, which flags the sector
+                    as complete. Then the server merges the analyzed sector to the completed data set, which contains meteor distribution density across the globe. Each time a user
+                    computer completes another sector everyone which goes to the site can see the output from completed sectors as a world map with different shaded sectors on it.
+                    <br>
+                    <br>
+                    The system had two sides to it a client side and the public side. The client side included an interface to upload data to the server and specify parameters
+                    for the analysis; the public side consisted of a front facing interface to explain to users what will be happening and where their contribution is going,
+                    Then a graphic is used to show the progress of the data being crunched by the browser followed by a world map filled with current density information from,
+                    already crunched data.
+                    <br>
+                    <br>
+                    This was a server/client implementation and was the first time I have worked with a real server using PHP, JavaScript, HTML, CSS to build the entire project.
+                </div>
+
+            </div>
+            <div class="Right display ">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+                <tr>
+                <td>
+                    <a href="https://github.com/awesomePavi/Yhack2016" target="_blank">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/MEC.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Broadcast system</b></span>
+                    <span style="float: right;"> <b>Created October 2016</b></span>
+                    <br>
+                    <hr>
+                    <span>McMaster Programming Competition</span>
+                    <br>
+                    <br>
+                    For the competition, we choose to implement an AM/FM Radio broadcasting system to distribute crucial weather information to nearby refugees attempting
+                    to navigate open waters. The system was built in C++ for we believed that it would require the least amount of resources to operate, as it does not
+                    require hardware to run a JVM in order to run, but compiles directly into machine code. The system needed to be robust and had to account for
+                    <ul>
+                        <li>
+                            Sudden power outages.
+                        </li>
+                        <li>
+                            Interference from other buoys
+                        </li>
+                    </ul>
+                    The Bouy has access to a AdHoc network linked to all Buoys, and an AM/FM transmitter and Reliever. The program consists of three main parts start-up,
+                    message handling and error handling.
+                    <br>
+                    <br>
+                    The system we devised would always scan for an AM and FM frequency which is open on start-up, the frequency is chosen at random, to minimize the chances
+                    of nearby Buoys interfering with each other, the logic for this is that when a frequency is selected the receiver is used to check for interference. In
+                    an area where there is a dense population of Buoys if signals were selected sequentially from 535 kHz to 1700 kHz (AM), then each starting buoy would
+                    spend important time checking all the frequencies until it finds an open one, the randomization on startup aims to minimize this issue.
+                    <br>
+                    <br>
+                    Messages to be broadcast are received by the system from the weather module and ocean conditions module, the system would queue up weather
+                    data and ocean conditions then would alternate its transmissions of the two pieces of data, the queue used for this prioritizes messages by time and dequeue any old information
+                    if more current data is available. The queue overrides any transmissions if it receives an extreme warning from either the weather module or ocean conditions
+                    module. The information from the queue is sent to another module to create a human friendly message
+                    and broadcast it. The module converts the input information into simple speech using a series of filters and bins (implementation not in scope of
+                    competition), once a message was converted to speech it was broadcast on both the AM and FM bands (The broadcasting of the messages was out of scope of
+                    the competition).
+                    <br>
+                    <br>
+                    The system will be placed in open water where it must put up with horrendous conditions the system for this reason must be able to notify if it is non-functional
+                    such that it may be fixed. On startup and periodically on a schedule the system is checked for functionality by broadcasting a signal on it's AM and FM bands and
+                    then using the receiver to check if the signal received matched the expected output signal. If an issue arises the Buoy uses the AdHoc network to send a message
+                    across the network to notify a repair is required.
+                    <br>
+                    <br>
+                    This was a server/client implementation and was implemented through C++.
+
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+            <table style="margin: 0px auto; padding: 0; width: 100%">
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/awesomePavi/MECProgramming_2016">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                </table>
+                <div class="spacer"></div>
+                <h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
+                <table style=" margin: 0px auto; padding: 0: width: auto; float: center">
+
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://ca.linkedin.com/in/simon-ly-b09a73b6">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Simon Ly</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/link.png"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.linkedin.com/in/tarunjain4">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Tarun Jain</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/link.png"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://ca.linkedin.com/in/eric-kamada-5b02a3127">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Eric Kamada</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/link.png"></td>
+                    </tr>
+
+
+
+                </table>
+                </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left ">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/JSTanks.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>JS Tanks</b></span>
+                    <span style="float: right;"> <b>Created September 2016</b></span>
+                    <br>
+                    <hr>
+                    <span>Term Project</span>
+                    <br>
+                    <br>
+                    The goal for the semester was to advance our documentation, requirements and testing skills to do this the task was to find an existing project and improve it's documentation.
+                    A decision was made to try and port a game over from Java to the web such that it would not have to be downloaded and ran locally, to try and show that with the power of modern computers
+                    simple games can be developed for the browser, allowing for ease of access to anyone. Over the course of a semester the requirements and interface spec was created.
+                    <br>
+                    <br>
+                    The implementation occurred in four main phases:
+                    <ul>
+                        <li> A simple framework was built to allow the HTML and JavaScript to interact with basic movement included and some simple graphics.
+                            (<a href="https://jstank.pavipath.com/HTML/Proof-Of-Concept.html" target="_blank">Here</a>)</li>
+                        <li>
+                            Core game features were added including tile entities, maps, AI and Difficulty  (<a href="https://jstank.pavipath.com/HTML/JSTanks.html" target="_blank">Here</a>)
+                        </li>
+                        <li>
+                            Homepage, Instructions and bug fixes were added, to a finalized revision  (<a href="https://jstank.pavipath.com/HomePage/homePage.html" target="_blank">Here</a>)
+                        </li>
+                        <li>
+                            An automated testing script was made to test the games features, to save time over conventional manual testing (<a href="https://jstank.pavipath.com/Testing/Test.html" target="_blank">Here</a>)
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    This was a Model View Controller implementation and was the port of a simple Java game enhanced and rebuilt in HTML5, JavaScript and CSS.
+                </div>
+
+            </div>
+            <div class="Right display ">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+                    <tr>
+                        <td>
+                            <a href="http://jstank.pavipath.com" target="_blank">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/web.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://github.com/awesomePavi/JSTanks-3XA3" target="_blank">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/git.png"></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+        <div class="spacer"></div>
+
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/Calc.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>C++ Calculator</b></span>
+                    <span style="float: right;"> <b>Created April 2016</b></span>
+                    <br>
+                    <hr>
+                    <span>Project Building a Calculator in C++</span>
+                    <br>
+                    <br>
+                    This project was made during an intro to Java course where we dabbled in C++. The system that we implemented, was able to follow
+                    BEDMAS accurately and compute the result to mathematical expressions. The systems worked by pushing an expression onto a stack and
+                    using a First in Last Out system would identify sections by its brackets and then do all calculations through BEDMAS order, swapping
+                    values as the program ran.
+                    <br>
+                    <br>
+                    This was a Pipe and Filter Architecture and was implemented with C++
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/awesomePavi/CPP-Expression-Calculator">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/SixMenMorris.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Six Men Morris</b></span>
+                    <span style="float: right;"> <b>Created March 2016</b></span>
+                    <br>
+                    <hr>
+                    <span>Six Men Morris</span>
+                    <br>
+                    <br>
+                    This program implements the Six Men Morris variant of the game Nine Men Morris the game includes:
+                    <ul>
+                        <li>
+                            Game Load/Save functionality
+                        </li>
+                        <li>
+                            Ability to set-up a game board from memory and play from their
+                        </li>
+                        <li>
+                            Simple AI functionality for user vs. computer
+                        </li>
+
+                    </ul>
+                    <br>
+                    This was a Model-View-Controller Architecture and was implemented with Java
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/awesomePavi/Six-Men-Morris_2AA4">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                </table>
+                <div class="spacer"></div>
+                <h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
+                <table style=" margin: 0px auto; padding: 0: width: auto; float: center">
+
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://ca.linkedin.com/in/shawnziyiking">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Shawn Jin</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/link.png"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://github.com/danceFLY">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Emily Ashworth</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/git.png"></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/Weather.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Weather Station Analyzer</b></span>
+                    <span style="float: right;"> <b>Created February 2016</b></span>
+                    <br>
+                    <hr>
+                    <span>Course Long Project</span>
+                    <br>
+                    <br>
+                    This application's intended purpose is to identify weather stations which are not required and may be relocated. The application does this by first placing all stations in a un-directed edge
+                    weighted graph, After this the graph is converted into a minimum spanning tree while only keeping edges between stations who's weather data is accurate to one another's within the user's specified
+                    tolerances. At this point the nodes with the greatest number of edges is removed, which leaves one of three node types. The first are stations which cannot be used to predict other stations, the seconds
+                    stations used to predict stations, and the third stations predicted. At this point the program then checks if the new layout is still accurate within user tolerances and to do this the program checks
+                    the layout over two additional years. At this point all data processing has been completed where it is put into a JSON file and is displayed for the user.
+                    <br>
+                    <br>
+                    On the technical side, the program uses a Model View Controller design. The Model being the back-end which is built in ruby and harnesses an SQLite3 database for the data storage and manipulation. The Controller is the server which uses the Sinatra API to effectively connect the Front-end to the Back-end. The View is written in HTML/CSS/Java-Script, and uses an electron wrapper to allow it to act as a standalone application.
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://github.com/awesomePavi/Weather-Stn-Anly_2XB3">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/git.png"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://drive.google.com/file/d/0Bw2B-7OLfsDAY1ZyeThrNmpmZFk/view">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on Drive</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/drive.png"></td>
+                    </tr>
+
+                </table>
+
+                <div class="spacer">
+                    <h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
+                    <table style=" margin: 0px auto; padding: 0: width: auto; float: center">
+
+                        <tr>
+                            <td>
+                                <a target="_blank" href="http://kunalshah.ca">
+                                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Kunal Shah</h3>
+                                </a>
+                            </td>
+                            <td><img class="scaled" src="./Icons/link.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a target="_blank" href="https://ca.linkedin.com/in/pjmcoliveira">
+                                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Pedro Oliveria</h3>
+                                </a>
+                            </td>
+                            <td><img class="scaled" src="./Icons/link.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a target="_blank" href="https://ca.linkedin.com/in/pareek-ravi-272134113">
+                                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Pareek Ravi</h3>
+                                </a>
+                            </td>
+                            <td><img class="scaled" src="./Icons/link.png"></td>
+                        </tr>
+
+                    </table>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/Website.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Personal WebSite 2016</b></span>
+                    <span style="float: right;"> <b>Created January 2016</b></span>
+                    <br>
+                    <hr>
+                    <span>Built to showcase my work</span>
+                    <br>
+                    <br>
+                    This is my original personal website. Hosted via GitHub and with a domain name provided by name cheap. I created this website because I wanted a way to showcase my CV easily for
+                    everyone to see, and so I can keep track of what I've done. I dabbled with WordPress, which boasts an intuitive interface, but I found it cumbersome and was unable to find the
+                    layout that I desired. At this point I decided since I knew enough about HTML and CSS, from when I played with it in high school, I would construct my own site from scratch. I took
+                    out my pencil and paper drew out a design, chose a colour palette, and got to work.
+                    <br>
+                    <br>
+                    This was implemented through HTML, CSS and Javascript
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+                    <tr>
+                        <td>
+                            <a href="http://www.pavipath.com/WebSite2016/" target="_blank">
+                                <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on the Web</h3>
+                            </a>
+                        </td>
+                        <td><img class="scaled" src="./Icons/web.png"></td>
+                    </tr>
+                <tr>
+                <td>
+                    <a href="https://github.com/awesomePavi/WebSite2016"  target="_blank">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/WelclomeToCanada.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Welcome To Canada</b></span>
+                    <span style="float: right;"> <b>Created November 2015</b></span>
+                    <br>
+                    <hr>
+                    <span>Hack Western 2 - Project to help Immigrants</span>
+                    <br>
+                    <br>
+                    This application was made for android by Mike Hong, Jack Li, Matthew Ngai and myself. This application is targeted to those who are new to the country and do not know much
+                    about the culture and customs and is designed to make the transition to Canadian life simpler.
+                    <br>
+                    Some key features the application offers include:
+                    <ul>
+                        <li>
+                            Push Notification for national Holidays
+                        </li>
+                        <li>
+                            Translations of Commonly used English words into 9 different Languages
+                        </li>
+                        <li>
+                            Currency Exchange Rates
+                        </li>
+
+                    </ul>
+                    <br>
+                    This was a Batch Sequential Architecture and was implemented through Java and uses the wolfram API
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/awesomePavi/About_Canada">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                </table>
+                <div class="spacer"></div>
+            <h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
+            <table style=" margin: 0px auto; padding: 0: width: auto; float: center">
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/88JumpingJacks">
+                        <h3 class="scaleTo" style="padding: 0; margin: 0;">Jack Li</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/mykongee">
+                        <h3 class="scaleTo" style="padding: 0; margin: 0;">Mike Hong</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/matthewngai">
+                        <h3 class="scaleTo" style="padding: 0; margin: 0;">Matthew Ngai</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+            </table>
+            </div>
+        </div>
+
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/BlockEvader.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Block Evader</b></span>
+                    <span style="float: right;"> <b>Created March 2014</b></span>
+                    <br>
+                    <hr>
+                    <span >First Android App</span>
+                    <br>
+                    <br>
+                    This was truly my first android app, I worked on intensively for a few days and then quit on android (until a Hackathon in 2015). I made this application because
+                    I wanted a game that was simple and fun to play while waiting at the bus stop. The game is straight forward all you must do is dodge the falling blocks. The game itself is
+                    very inefficient but the idea was simple enough, on first load it would create the images based on the phone’s resolution and size, then the game play would be randomly spaced and placed falling blocks.
+                    <br>
+                    The game had features that I believe more applications should have:
+                    <ul>
+                        <li>
+                            Personalized: The app allowed users to select there preferred colour scheme
+                        </li>
+                        <li>
+                            Input: The user could select to use touch input or the phones gyroscope
+                        </li>
+
+                    </ul>
+                    NOTE: This application was made on a Motorola RAZR (not the v3), and is quite buggy on other phones
+                    <br>
+                    <br>
+                    This used the Batch Sequential Architecture and was implemented with Java.
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+            <table style="margin: 0px auto; padding: 0; width: 100%">
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://www.dropbox.com/s/qdap1mhb4poaj2m/BlockEvader1.3.apk?dl=0">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on Dropbox</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/drop.png"></td>
+                </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/TetraverseHome.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Tetraverse</b></span>
+                    <span style="float: right;"> <b>Created Januaray 2014</b></span>
+                    <br>
+                    <hr>
+                    <span >Summative Assignment</span>
+                    <br>
+                    <br>
+                    This was the first large program that I worked on in a team. Over 3 months we made a custom rendition of the classic game Tetris. We designed and
+                    implemented a 3D-Render engine from scratch and implemented our rendition on the classic game Tetris.
+                    <br>
+                    The features that set this game apart from the rest were:
+                    <ul>
+                        <li>
+                            New Blocks: 1x1, 2x1, 3x1, miniature L, Bomb (Blew up blocks)
+                        </li>
+                        <li>
+                            Screen Rotation: Rotating the game and physics 90, 180 and 270 degrees randomly
+                        </li>
+                        <li>
+                            Custom Game Mode: You can include or exclude any features
+                        </li>
+                        <li>
+                            A variety of 3D-Depths
+                        </li>
+                    </ul>
+                    <br>
+                    This used the Model View Controller Architecture and was implemented with Java.
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/awesomePavi/Tetraverse">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                </table>
+                <div class="spacer"></div>
+            <h3 style="padding: 5px; margin: 0; text-align: center;">Worked With</h3>
+            <table style=" margin: 0px auto; padding: 0: width: auto; float: center">
+
+                <!--___WAIT FOR CONTACT, FOR PERMISSION & LINK INFO__-->
+                <!--<tr>-->
+                <!--<td>-->
+                        <!--<h3  style="padding: 0; margin: 0;">Christopher Wilson</h3>-->
+                    <!---->
+                <!--</td>-->
+                <!--</tr>-->
+
+                <!--<tr>-->
+                <!--<td>-->
+                        <!--<h3  style="padding: 0; margin: 0;">Stephen Webb</h3>-->
+                    <!---->
+                <!--</td>-->
+                <!--</tr>-->
+
+                <tr>
+                <td>
+                    <a target="_blank" href="https://ca.linkedin.com/in/shirley-xiao-b72335a7">
+                        <h3 class="scaleTo" style="padding: 0; margin: 0;">Shirley Xiao</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/link.png"></td>
+                </tr>
+
+            </table>
+            </div>
+
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="projects">
+            <div class="Left">
+                <hr style="clear: both">
+                <br>
+
+                <img style=" float: left;" src="./Img/Snake.png">
+                <div style="padding-left: 5%; float: right">
+                    <span style="float: left;"> <b>Snake</b></span>
+                    <span style="float: right;"> <b>Created September 2010</b></span>
+                    <br>
+                    <hr>
+                    <span >Grade 9 - Intro to Programming</span>
+                    <br>
+                    <br>
+                    This was the first program that I made with graphics. In high school I was not able to appreciate the text based programs we were working on
+                    in class because it seemed too simple. During class I would typically finish my work early and use the reference guide to find new things. I
+                    taught myself arrays, graphics, and loops. Than made this snake game to show my work, this very high level language is what made me finally decide to become a Software Engineer.
+                    <br>
+                    <br>
+                    This used the Batch Sequential and was implemented with Turing.
+                </div>
+
+            </div>
+            <div class="Right display">
+                <hr style="clear: both">
+                <table style="margin: 0px auto; padding: 0; width: 100%">
+
+                <tr>
+                <td>
+                    <a href="https://github.com/awesomePavi/Weather-Stn-Anly_2XB3"  target="_blank">
+                    <h3 class="scaleTo" style="padding: 0; margin: 0;">Available on GitHub</h3>
+                    </a>
+                </td>
+                <td><img class="scaled" src="./Icons/git.png"></td>
+                </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
 
 </body>
 </html>
